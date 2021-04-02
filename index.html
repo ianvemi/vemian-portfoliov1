@@ -1,15 +1,152 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="hi">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/flaticon/flaticon.css">
     <title>vemian</title>
-    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
-<body>
-<h1>vemian devs</h1>
+<body >
+    <!--HEADER SECTION-->
+    <header id="header">
 
+        <nav class="menu">
+            <ul>
+                <li><a href="#hi">Hi</a></li>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+
+            <button class="ham" type="button">
+                <span class="br-1"></span>
+                <span class="br-2"></span>
+                <span class="br-3"></span>
+            </button>
+        </nav>
+
+        <div class="logo"><a href="#">vemian</a></div>
+
+
+    </header>
+    <script src="main.js"></script>
+
+
+    <!--FIRST SECTION-->
+    <div class="container" >
+
+        <div class="seccion1">
+
+            <div class="bienvenida">
+                <div class="bienvenida-texto">
+                    <p>HI I'M<br>
+                        <ian>Ian</ian><br>
+                        WELCOME TO MY PERSONAL WEBSITE
+                    </p>
+                    <div class="buttons">
+
+                        <a class="button" href="https://www.facebook.com/ianvemi/" target="_blank">
+                            <button class="button"><i class="flaticon-facebook"></i></button></a>
+                        <a class="button" href="https://www.instagram.com/ianvemi/" target="_blank">
+                            <button class="button"><i class="flaticon-instagram"></i></button></a>
+                        <a class="button" href="https://api.whatsapp.com/send?phone=525528650461&text=Hola%20Ian!%20">
+                            <button class="button"><i class="flaticon-whatsapp"></i></button></a>
+                        <a class="button"
+                            href="https://www.linkedin.com/in/ian-sealtiel-vel%C3%A1zquez-medina-038156209/"
+                            target="_blank">
+                            <button class="button"><i class="flaticon-linkedin"></i></button></a>
+                        <a class="button" href="https://github.com/vemian" target="_blank">
+                            <button class="button"><i class="flaticon-github"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--SECOND SECTION-->
+    <div class="content1" id="aboutme">
+
+        <div class="profile">
+            <img src="../vemian/images/i.jpg">
+        </div>
+
+        <div class="contenido">
+
+            <div class="layout">
+
+                <div class="profile2">
+                    <img src="../vemian/images/i.jpg"> 
+                </div>
+
+                <div class="block">
+                    <h1>Ian Velázquez</h1>
+                </div>
+                <div class="block2">
+                    <h2 id="desc">- I am a developer, passionate about web design</h2>
+                </div>
+            </div>
+
+            <div class="block">
+                <h1>SCHOOL EDUCATION</h1>
+            </div>
+            <div class="block2">
+                <section class="school" id="desc">
+                    <span>IPN 2014-2017</span>
+                    <h3 id="desc1">Digital Graphic Design Technician</h3>
+                    <span>IPN 2017-2021</span>
+                    <h3 id="desc1">Informatics Engineering</h3>
+                </section>
+            </div>
+
+            <section id="skills">
+                <div class="block">
+                    <h1>SOME HOBBIES</h1>
+                </div>
+                <div class="grid">
+                    <div class="box hobbie">videogames</div>
+                    <div class="box hobbie">movie buff</div>
+                    <div class="box hobbie">photomontage</div>
+                    <div class="box hobbie">concertgoer</div>
+                </div>
+
+                <div class="block">
+                    <h1>SKILLS</h1>
+                </div>
+                <div class="grid">
+                    <div class="box html">HTML</div>
+                    <div class="box css">CSS</div>
+                    <div class="box JS">JS</div>
+                    <div class="box angular">ANGULAR</div>
+                </div>
+                <div class="grid">
+                    <div class="box php">PHP</div>
+                    <div class="box sql">SQL</div>
+                    <div class="box adobe">ADOBE</div>
+                    <div class="box nodejs">NODEJS</div>
+                </div>
+                <div class="block" id="portfolio">
+                    <h1>PORTAFOLIO</h1>
+                </div>
+                <div class="grid">
+                    <div class="box2 layout1"><a href="#">Layout-Responsive</a></div>
+                    <div class="box2 layout2"><a href="#">Layout-Flexbox</a></div>
+                </div>
+                <div class="grid">
+                    <div class="box2 We"><a href="#">We</a></div>
+                    <div class="box2 good beats"><a href="#">good beats</a></div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            vemian &copy 2021 Ian Velázquez All rights reserved.
+        </footer>
+
+    </div>
 </body>
 
 

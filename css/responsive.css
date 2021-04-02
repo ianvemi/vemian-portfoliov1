@@ -1,0 +1,179 @@
+
+
+/*MENU RESPONSIVE*/
+@media (max-width: 899px){
+
+    body{
+        /*overflow: hidden;*/
+    }
+
+    .ham{
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 50px;
+        transition: 0.5s 0.1s;
+    }
+
+    .ham:hover{
+        transform: rotate(360deg);
+    }
+
+    #header{
+        display: flex;
+        flex-direction:column-reverse;
+        align-items: flex-start;
+    }
+
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 30px;
+        display: none;
+        opacity: 0;
+        z-index: 100;
+    }
+
+    .menu ul li{
+        width: 90%;
+        text-align: left;
+        padding: 20px;
+        background-color: #363636;
+    }
+
+    .menu ul li :hover{
+        color:white;
+        font-weight: bold;
+        box-shadow: none;
+        background-color: #1d1d1d;
+    }
+
+
+    .menu ul li a{
+        font-size: 25px;
+        padding-right: 50%;
+    }
+
+    .menu{
+        width: 100%;
+        background-color: #1d1d1d;
+    }
+
+    .menu ul.activado{
+        display: flex;
+        animation: menu 1s ease-in-out both;
+    }
+
+    .br-1.animado{
+        transform: rotate(-45deg)
+        translate(-10px, 8px);
+    }
+
+    .br-2.animado{
+        opacity: 0;
+    }
+
+    .br-3.animado{
+        transform: rotate(45deg)
+        translate(-10px, -8px);
+    }
+
+    /* MENU ANIMATIONS*/
+    @keyframes menu{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    /*RESPONSIVE DESIGN*/
+    html, body
+    {
+    height: 70vh;
+    }
+    body{
+        background-size: 200%;
+    }
+
+    .bienvenida{
+        flex-basis: 100%;
+    }
+
+    .bienvenida-texto{
+        font-weight: normal;
+    }
+
+    .seccion1{
+        flex-basis: 100%;
+        margin-top: 35%;
+    }
+
+    /*ABOUT ME*/
+    html, .content1
+    {
+    height: 100vh;
+    }
+
+    .contenido{
+        flex-basis: 100%;
+        width: 100%;
+        margin-top: 0px;
+
+    }
+
+    h1{
+        width: 80%;
+        margin: 0px;
+        padding: 30px;
+    }
+
+    #desc{
+        width: 93%;
+        margin-left: 0%;
+        padding-left: 7%;
+        font-size: 19px;
+    }
+
+    .profile img{
+         display: none;
+        }
+    
+    .profile2{
+        display: flex;
+    }
+
+ .profile2 img{
+        margin:0px auto;
+		display:block;
+        width: 90%;
+        height: auto;
+        border: 10px solid #2B8EEF;
+        animation: movimiento;
+        animation-timing-function: linear;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+         }
+
+.grid .box{
+    flex-basis: 49%;
+    border: 1px solid #d1d1d1;
+}
+
+.grid .box:hover{
+    color: #d1d1d1;
+}
+
+.grid .box2{
+    flex-basis: 90%;
+    height: auto;
+    border: 1px solid #d1d1d1;
+}
+
+}

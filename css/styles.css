@@ -1,4 +1,494 @@
-body{
-    background-color: black;
-    color: aliceblue;
+/*FONTS*/
+@font-face{
+    font-family: "Century Gothic";
+    src: url('fonts/CenturyGothic.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face{
+    font-family: "Caviar Dreams";
+    src: url('fonts/CaviarDreams.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*GENERAL*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+body{
+    background-image: url("../images/pattern.jpg");
+    background-position: 0px, 0px;
+    background-size: 110%;
+    animation: mood;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    animation-duration: 30s;
+}
+html, body
+{
+    height: 100%;
+}
+@keyframes mood{
+    0%{
+        background-position: 0px, 0px;
+    }
+    50%{
+        background-position: 1200px, 1200px;
+    }
+    100%{
+        background-position: 0px, 0px;
+    }
+}
+/*HEADER*/
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+#header{
+    width: 100%;
+    background-color:#1E1E1E;
+    height:fit-content;
+    font-family: "Caviar Dreams";
+    color: white;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu{
+    width: 50%;
+    float: right;
+    height: fit-content;
+}
+
+.menu ul{
+    float: right;
+}
+
+.menu ul li{
+    text-align: justify;
+    display: inline-block;
+    line-height: 50px;
+    transition: all 0.3s;
+    border-radius: 4px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+}
+
+.menu ul li :hover{
+    color:white;
+    font-weight: bold;
+    box-shadow: inset 150px 0 0 0  #2B8EEF;
+}
+
+.menu ul li a{
+    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: ease-out 0.4s;
+    box-shadow: inset 0 0 0 0  #2B8EEF;
+}
+
+.logo{
+    width: 15%;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 45px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.logo:hover a{
+color: #2B8EEF;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+
+.ham{
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding:0;
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+.ham span{
+    display: block;
+    background-color: #D8D8D8;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+
+}
+
+
+
+/*WELCOME*/
+
+.seccion1{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+    margin-top: 8%;
+    font-family: "Century Gothic";
+   
+}
+
+.bienvenida{
+    flex-basis: 40%;
+    background-color: #1d1d1d;
+    transition: all 900ms;
+    text-align: center;
+    transition: ease-out 1s;
+    box-shadow: inset 0 0 0 0.01px  #2B8EEF;
+}
+
+.bienvenida:hover{
+    opacity: 1;
+    color: black;
+    box-shadow: inset 1000px 0 0 0  #2B8EEF;
+}
+
+.bienvenida:hover .bienvenida-texto ian{
+    color: white;
+}
+
+.seccion1:hover .vemian{
+    display: block;
+}
+
+.bienvenida:hover .bienvenida-texto{
+     color: black;
+     border: #1d1d1d 10px solid;
+}
+
+.bienvenida-texto{
+    color: white;
+    margin: 0px auto;
+    font-size: 25px;
+    font-weight: bold;
+    border: #2B8EEF 10px solid;
+    padding: 30px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    transition: all 900ms;
+}
+
+.bienvenida-texto ian{
+    font-size: 150px;
+    color: #2B8EEF;
+    font-weight: bold;
+}
+/*CONTENT*/
+html, .content1
+{
+    height: 100vh;
+}
+.content1{
+    background-color: #1d1d1d;
+    color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow:1;
+    flex-wrap: wrap;
+    
+}
+.contenido{
+    flex-basis: 70%;
+    margin-top: 50px;
+    font-family: "Century Gothic";
+}
+/*ABOUT ME STYLES*/
+.layout{
+    flex-grow: 1;
+    margin: 0px;
+    width: 100%;
+}
+.block{
+    width: 100%;
+    background-color: #1d1d1d;
+}
+.block2{
+    width: 100%;
+    background-color: #D8D8D8;
+}
+
+.block2 h2{
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+h1{
+    width: 75%;
+    margin-left: 25%;
+    background-color:#1d1d1d;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.layout h1{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    font-size: 30px;
+}
+
+#desc{
+    width: 75%;
+    margin-left: 15%;
+    padding-left: 10%;
+    background-color: #D8D8D8;
+    color: #1d1d1d;
+    font-size: 22px;
+    transition: ease-out 0.4s;
+    box-shadow: inset 0 0 0 0.01px   #2B8EEF;
+    font-weight: normal;
+}
+
+#desc:hover{
+    box-shadow: inset 900px 0 0 0  #2B8EEF;
+    color: white;
+}
+
+.school{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.school span{
+    flex-direction: row;
+    flex-basis: 100%;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.school h3{
+    margin-left: 10px ;
+    padding: 10px;
+    padding-bottom: 23px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+/*SKILLS - HOBBIES- PORTAFOLIO BOXES*/
+.grid{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grid .box{
+    flex-basis: 15%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    height:80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: #D8D8D8;
+    border: none;
+    font-size: 18px;
+    color: #1d1d1d;
+}
+
+.grid .box2{
+    flex-basis: 15%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    height:200px;
+    text-align: center;
+    line-height: 200px;
+    background-color: #D8D8D8;
+    border: none;
+    font-size: 18px;
+    
+}
+
+.grid .box2 a{
+    width: 100%;
+    padding:30px;
+    text-decoration: none;
+    color: #1d1d1d;
+    background-color:transparent;
+    font-size: 20px;
+}
+
+/*HOBBIES COLORS*/
+.hobbie{
+    color: #1d1d1d;
+    transition: ease-out 0.7s;
+    box-shadow: inset 0px 0px 0px 0.01px   #2B8EEF;
+}
+
+.hobbie:hover{
+    box-shadow: inset 300px 0px 0px 0px #2B8EEF;
+    color: white;
+    font-weight: bold;
+}
+/*SKILLS COLORS*/
+.html{
+    transition: ease-out 0.7s;
+    box-shadow: inset 0px 0px 0px 0.01px   #da8300;
+}
+.html:hover{
+    box-shadow: inset 350px 0px 0px 0px #da8300;
+    color: white;
+    font-weight: bold;
+}
+
+.php{
+    transition: ease-out 0.7s;
+    box-shadow: inset 0px 0px 0px 0.01px   #4380bd;
+}
+
+.php:hover{
+    box-shadow: inset 350px 0px 0px 0px #4380bd;
+    color: white;
+    font-weight: bold;
+}
+
+.css{
+    transition: ease-out 0.7s;
+    box-shadow: inset 0px 0px 0px 0.01px   #2f3df5;
+}
+
+.css:hover{
+    box-shadow: inset 350px 0px 0px 0px #2f3df5;
+    color: white;
+    font-weight: bold;
+}
+
+.JS{
+    transition: ease-out 0.7s;
+    box-shadow: inset 0px 0px 0px 0.01px   #dfc010;
+}
+
+.JS:hover{
+    box-shadow: inset 350px 0px 0px 0px #dfc010;
+    color: white;
+    font-weight: bold;
+}
+
+.angular{
+    transition: ease-out 0.7s;
+    box-shadow: inset 0px 0px 0px 0.01px #b60303;
+}
+
+.angular:hover{
+    box-shadow: inset 350px 0px 0px 0px #b60303;
+    color: white;
+    font-weight: bold;
+}
+
+.sql{
+    transition: ease-out 0.7s;
+    box-shadow: inset 0px 0px 0px 0.01px   #0a3d6d;
+}
+
+.sql:hover{
+    box-shadow: inset 350px 0px 0px 0px #0a3d6d;
+    color: white;
+    font-weight: bold;
+}
+
+.adobe{
+    transition: ease-out 0.7s;
+    box-shadow: inset 0px 0px 0px 0.01px   #6d0a0a;
+}
+
+.adobe:hover{
+    box-shadow: inset 400px 0px 0px 0px #6d0a0a;
+    color: white;
+    font-weight: bold;
+}
+
+.nodejs{
+    transition: ease-out 0.7s;
+    box-shadow: inset 0px 0px 0px 0.01px   #0e8f35;
+}
+
+.nodejs:hover{
+    box-shadow: inset 400px 0px 0px 0px #0e8f35;
+    color: white;
+    font-weight: bold;
+}
+
+/*PROFILE IMAGE*/
+ .profile img{
+    border: 10px solid #2B8EEF;
+     position: absolute;
+     right: 70%;
+     width: 15%;
+     z-index: 50;
+     animation: movimiento;
+     animation-timing-function: linear;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+ }
+
+ .profile2{
+     display: none;
+ }
+
+ @keyframes movimiento{
+     0%{
+        transform: translateY(0px);
+     }
+
+     50%{
+        transform: translateY(30px);
+     }
+
+     100%{
+        transform: translateY(0px);
+     }
+ }
+
+ footer{
+     font-family: "Century Gothic";
+     font-size: 15px;
+     display: block;
+     height: 100px;
+     background-color: #1d1d1d;
+     color: aliceblue;
+     width: 100%;
+     text-align: center;
+     line-height: 100px;
+ }
+ 
+
+
+
+

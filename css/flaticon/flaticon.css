@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "flaticon";
+    src: 
+    url("../flaticon/flaticon.ttf") format("truetype"),
+url("./flaticon.woff") format("woff"),
+url("./flaticon.woff2") format("woff2"),
+url("./flaticon.eot") format("embedded-opentype"),
+url("./flaticon.svg") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 30px;
+}
+.button{
+    width: 100%;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    height: 40px;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    transition: all 400ms;
+}
+
+button:hover{
+    transform: scale(1.4,1.4);
+    color: #1d1d1d;
+}
+
+.flaticon-facebook:before {
+    content: "\f101";
+}
+.flaticon-github:before {
+    content: "\f102";
+}
+.flaticon-instagram:before {
+    content: "\f103";
+}
+.flaticon-linkedin:before {
+    content: "\f104";
+}
+.flaticon-logotipo-de-xbox:before {
+    content: "\f105";
+}
+.flaticon-whatsapp:before {
+    content: "\f106";
+}
