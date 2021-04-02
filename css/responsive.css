@@ -68,21 +68,7 @@
         display: flex;
         animation: menu 1s ease-in-out both;
     }
-
-    .br-1.animado{
-        transform: rotate(-45deg)
-        translate(-10px, 8px);
-    }
-
-    .br-2.animado{
-        opacity: 0;
-    }
-
-    .br-3.animado{
-        transform: rotate(45deg)
-        translate(-10px, -8px);
-    }
-
+    
     /* MENU ANIMATIONS*/
     @keyframes menu{
         from{
