@@ -23,6 +23,7 @@
         display: flex;
         flex-direction:column-reverse;
         align-items: flex-start;
+        height: fit-content;
     }
 
     .menu ul{
@@ -37,20 +38,22 @@
         display: none;
         opacity: 0;
         z-index: 100;
+        margin-right: 0px;
+        background-color: transparent;
     }
 
     .menu ul li{
         width: 90%;
         text-align: left;
         padding: 20px;
-        background-color: #363636;
+        background-color: transparent;
     }
 
     .menu ul li :hover{
         color:white;
         font-weight: bold;
         box-shadow: none;
-        background-color: #1d1d1d;
+        background-color: transparent;
     }
 
 
@@ -61,13 +64,20 @@
 
     .menu{
         width: 100%;
-        background-color: #1d1d1d;
     }
 
     .menu ul.activado{
         display: flex;
         animation: menu 1s ease-in-out both;
     }
+
+    .logo{
+        line-height: 50px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+
+    }
+
     
     /* MENU ANIMATIONS*/
     @keyframes menu{
@@ -158,8 +168,8 @@
 
 .grid .box2{
     flex-basis: 90%;
-    height: auto;
-    border: 1px solid #d1d1d1;
+    margin: 0px;
+    border-bottom: 10px solid #f1f1f1;
 }
 
 }

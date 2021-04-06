@@ -55,7 +55,7 @@ html, body
 
 #header{
     width: 100%;
-    background-color:#1E1E1E;
+    background-color:#1e1e1ed3;
     height:fit-content;
     font-family: "Caviar Dreams";
     color: white;
@@ -69,23 +69,24 @@ html, body
     width: 50%;
     float: right;
     height: fit-content;
+
 }
 
 .menu ul{
     float: right;
+    margin-right: 75px;
 }
 
 .menu ul li{
     text-align: justify;
     display: inline-block;
-    line-height: 50px;
+    line-height: 40px;
     transition: all 0.3s;
     border-radius: 4px;
-    padding: 20px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    
+    padding-left: 10px;
 }
+    
+
 
 .menu ul li :hover{
     color:white;
@@ -94,10 +95,10 @@ html, body
 }
 
 .menu ul li a{
-    padding-bottom: 20px;
     padding-top: 15px;
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 10px;
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -109,12 +110,9 @@ html, body
     width: 15%;
     display: inline-block;
     text-align: center;
-    line-height: 40px;
-    font-size: 45px;
+    line-height: 30px;
+    font-size: 40px;
     font-weight: bold;
-    margin-left: 20px;
-    padding: 20px;
-    padding-top: 0px;
 }
 
 .logo:hover a{
@@ -162,7 +160,7 @@ color: #2B8EEF;
 }
 
 .bienvenida{
-    flex-basis: 40%;
+    flex-basis: 45%;
     background-color: #1d1d1d;
     transition: all 900ms;
     text-align: center;
@@ -281,6 +279,23 @@ h1{
     color: white;
 }
 
+#desc2{
+    width: 75%;
+    margin-left: 15%;
+    padding-left: 10%;
+    background-color: #D8D8D8;
+    color: #1d1d1d;
+    font-size: 22px;
+    transition: ease-out 0.4s;
+    box-shadow: inset 0 0 0 0.01px   #2B8EEF;
+    font-weight: normal;
+}
+
+#desc2:hover{
+    box-shadow: inset 900px 0 0 0  #2B8EEF;
+    color: white;
+}
+
 .school{
     display: flex;
     flex-direction: row;
@@ -323,17 +338,23 @@ h1{
     color: #1d1d1d;
 }
 
-.grid .box2{
+.grid .box2 {
     flex-basis: 15%;
     flex-grow: 1;
     flex-wrap: wrap;
-    height:200px;
+    height:350px;
     text-align: center;
-    line-height: 200px;
-    background-color: #D8D8D8;
+    line-height: 50px;
+    background-color:#D8D8D8;
     border: none;
     font-size: 18px;
-    
+    color: #1d1d1d;
+    margin: 2px;
+}
+
+.grid .box2:hover .description{
+    display:block;
+    animation: menu 0.5s ease-in-out both;
 }
 
 .grid .box2 a{
@@ -343,6 +364,31 @@ h1{
     color: #1d1d1d;
     background-color:transparent;
     font-size: 20px;
+}
+
+.description{
+    margin: 0px auto;
+    display: none;
+    height: 100%;
+    opacity: 0;
+    background-color: #1d1d1dde;
+    color: #D8D8D8;
+    text-align: center;
+}
+
+.buttons-project{
+    background-color: #1d1d1d;
+    margin:0px auto;
+    padding: 3%;
+}
+
+@keyframes menu{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 /*HOBBIES COLORS*/
@@ -480,15 +526,36 @@ h1{
      font-family: "Century Gothic";
      font-size: 15px;
      display: block;
-     height: 100px;
-     background-color: #1d1d1d;
+     height: 50px;
+     background-color: #1e1e1ed3;
      color: aliceblue;
      width: 100%;
      text-align: center;
-     line-height: 100px;
+     line-height: 50px;
  }
  
+/*PORTFOLIO PROJECTS*/
+.goodbeats{
+    background-image: url("../images/goodbeats.jpg");
+    background-size:100%;
+    background-position: 0px,0px;
+}
 
+.cw{
+    background-image: url("../images/cw.jpg");
+    background-size:100%;
+    background-position: 0px,0px;
+}
+ .layout1{
+    background-image: url("../images/blog.jpg");
+    background-size: 140%;
+}
+
+.layout2{
+    display: block;
+    background-image: url("../images/portfolio.jpg");
+    background-size: 200%;
+}
 
 
 

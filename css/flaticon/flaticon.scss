@@ -1,5 +1,7 @@
+$flaticon-font: "flaticon";
+
 @font-face {
-    font-family: "flaticon";
+    font-family: $flaticon-font;
     src: url("./flaticon.ttf?6ae22314f0bdff9bf547995d992a983c") format("truetype"),
 url("./flaticon.woff?6ae22314f0bdff9bf547995d992a983c") format("woff"),
 url("./flaticon.woff2?6ae22314f0bdff9bf547995d992a983c") format("woff2"),
@@ -18,60 +20,34 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.buttons{
-    display: flex;
-    margin-top: 30px;
-}
-.button{
-    width: 100%;
-    flex-flow: wrap;
-    flex-wrap: wrap;
-    height: 40px;
-    font-size: 35px;
-    background-color: transparent;
-    border: none;
-    color: white;
-    transition: all 400ms;
-}
-
-button:hover{
-    transform: scale(1.4,1.4);
-    color: #1d1d1d;
-}
-
-.button2{
-    font-size: 45px;
-    margin-top: 10px;
-    background-color: transparent;
-    border: none;
-    color: white;
-    transition: all 400ms;
-}
-
-.button2 button:hover{
-    transform: scale(1.4,1.4);
-    color: #2B8EEF;
-}
-
+$flaticon-map: (
+    "cv-y-cv": "\f101",
+    "facebook": "\f102",
+    "github": "\f103",
+    "instagram": "\f104",
+    "linkedin": "\f105",
+    "live": "\f106",
+    "whatsapp": "\f107",
+);
 
 .flaticon-cv-y-cv:before {
-    content: "\f101";
+    content: map-get($flaticon-map, "cv-y-cv");
 }
 .flaticon-facebook:before {
-    content: "\f102";
+    content: map-get($flaticon-map, "facebook");
 }
 .flaticon-github:before {
-    content: "\f103";
+    content: map-get($flaticon-map, "github");
 }
 .flaticon-instagram:before {
-    content: "\f104";
+    content: map-get($flaticon-map, "instagram");
 }
 .flaticon-linkedin:before {
-    content: "\f105";
+    content: map-get($flaticon-map, "linkedin");
 }
 .flaticon-live:before {
-    content: "\f106";
+    content: map-get($flaticon-map, "live");
 }
 .flaticon-whatsapp:before {
-    content: "\f107";
+    content: map-get($flaticon-map, "whatsapp");
 }

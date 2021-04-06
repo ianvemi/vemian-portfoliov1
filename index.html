@@ -3,16 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width,initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="stylesheet" type="text/css" href="css/flaticon/flaticon.css">
     <link rel="icon" type="favicon/x-icon" href="images/icon.png" />
+
     <title>vemian</title>
 
 </head>
 
-<body >
+<body>
     <!--HEADER SECTION-->
     <header id="header">
 
@@ -23,7 +26,7 @@
                 <li><a href="#portfolio">Portfolio</a></li>
             </ul>
 
-            <button class="ham" type="button">
+            <button id="menu-mobile" class="ham" type="button">
                 <span class="br-1"></span>
                 <span class="br-2"></span>
                 <span class="br-3"></span>
@@ -38,7 +41,7 @@
 
 
     <!--FIRST SECTION-->
-    <div class="container" >
+    <div class="container">
 
         <div class="seccion1">
 
@@ -51,17 +54,15 @@
                     <div class="buttons">
 
                         <a class="button" href="https://www.facebook.com/ianvemi/" target="_blank">
-                            <button class="button"><i class="flaticon-facebook"></i></button></a>
+                            <button id="b-facebook" class="button"><i class="flaticon-facebook"></i></button></a>
                         <a class="button" href="https://www.instagram.com/ianvemi/" target="_blank">
-                            <button class="button"><i class="flaticon-instagram"></i></button></a>
+                            <button id="b-instagram" class="button"><i class="flaticon-instagram"></i></button></a>
                         <a class="button" href="https://api.whatsapp.com/send?phone=525528650461&text=Hola%20Ian!%20">
-                            <button class="button"><i class="flaticon-whatsapp"></i></button></a>
-                        <a class="button"
-                            href="https://www.linkedin.com/in/ianvemi/"
-                            target="_blank">
-                            <button class="button"><i class="flaticon-linkedin"></i></button></a>
+                            <button id="b-wa" class="button"><i class="flaticon-whatsapp"></i></button></a>
+                        <a class="button" href="https://www.linkedin.com/in/ianvemi/" target="_blank">
+                            <button id="b-linked" class="button"><i class="flaticon-linkedin"></i></button></a>
                         <a class="button" href="https://github.com/vemian" target="_blank">
-                            <button class="button"><i class="flaticon-github"></i></button></a>
+                            <button id="b-github" class="button"><i class="flaticon-github"></i></button></a>
                     </div>
                 </div>
             </div>
@@ -81,7 +82,7 @@
             <div class="layout">
 
                 <div class="profile2">
-                    <img src="images/i.jpg"> 
+                    <img src="images/i.jpg">
                 </div>
 
                 <div class="block">
@@ -96,7 +97,7 @@
                 <h1>SCHOOL EDUCATION</h1>
             </div>
             <div class="block2">
-                <section class="school" id="desc">
+                <section class="school" id="desc2">
                     <span>IPN 2014-2017</span>
                     <h3 id="desc1">Digital Graphic Design Technician</h3>
                     <span>IPN 2017-2021</span>
@@ -130,16 +131,62 @@
                     <div class="box adobe">ADOBE</div>
                     <div class="box nodejs">NODEJS</div>
                 </div>
+
+
                 <div class="block" id="portfolio">
-                    <h1>PORTAFOLIO</h1>
+                    <h1>PORTFOLIO</h1>
                 </div>
                 <div class="grid">
-                    <div class="box2 layout1"><a href="#">Layout-Responsive</a></div>
-                    <div class="box2 layout2"><a href="#">Layout-Flexbox</a></div>
+                    <div class="box2 goodbeats">
+                        <div class="description">
+                            Developing</br>
+                            <h3 id="about">web app to manage your favorite music</h3>
+                        </div>
+                    </div>
+
+                    <div class="box2 cw">
+                        <div class="description">
+                            Developing</br>
+                            <h3 id="about">promo page to my game</h3>
+                        </div>
+                    </div>
+
                 </div>
+
                 <div class="grid">
-                    <div class="box2 We"><a href="#">We</a></div>
-                    <div class="box2 good beats"><a href="#">good beats</a></div>
+
+                    <div class="box2 layout1">
+                        <div class="description">
+                            Blog - layout</br>
+                            <h3 id="about">layout blog responsive using css</h3>
+                            <div class="buttons-project">
+                                <a class="button2"
+                                    href="https://github.com/vemian/layoutblog-css-responsive/tree/master/docs"
+                                    target="_blank">
+                                    <button class="button2"><i class="flaticon-github"></i></button></a>
+
+                                <a class="button2" href="https://vemian.github.io/layoutblog-css-responsive/"
+                                    target="_blank">
+                                    <button class="button2"><i class="flaticon-live"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box2 layout2">
+                        <div class="description">
+                            Portfolio - layout</br>
+                            <h3 id="about">layout portfolio responsive using flexbox</h3>
+                            <div class="buttons-project">
+                                <a class="button2" href="https://github.com/vemian/flexbox/tree/master/docs"
+                                    target="_blank">
+                                    <button class="button2"><i class="flaticon-github"></i></button></a>
+
+                                <a class="button2" href="https://vemian.github.io/flexbox/" target="_blank">
+                                    <button class="button2"><i class="flaticon-live"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </div>
