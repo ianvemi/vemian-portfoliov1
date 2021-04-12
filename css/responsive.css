@@ -1,7 +1,7 @@
 
 
 /*MENU RESPONSIVE*/
-@media (max-width: 899px){
+@media (max-width: 900px){
 
     body{
         /*overflow: hidden;*/
@@ -10,8 +10,8 @@
     .ham{
         display: block;
         position: absolute;
-        top: 5px;
-        right: 50px;
+        top: 0.5rem;
+        right: 5rem;
         transition: 0.5s 0.1s;
     }
 
@@ -34,23 +34,23 @@
         padding: 0;
         width: 100%;
         height: 40vh;
-        margin-bottom: 30px;
-        display: none;
+        margin-bottom: 3rem;
         opacity: 0;
         z-index: 100;
-        margin-right: 0px;
+        margin-right: 0;
         background-color: transparent;
+        display: none;
     }
 
     .menu ul li{
         width: 90%;
         text-align: left;
-        padding: 20px;
+        padding: 2rem;
         background-color: transparent;
     }
 
     .menu ul li :hover{
-        color:white;
+        color:var(--white);
         font-weight: bold;
         box-shadow: none;
         background-color: transparent;
@@ -58,7 +58,7 @@
 
 
     .menu ul li a{
-        font-size: 25px;
+        font-size: 2.5rem;
         padding-right: 50%;
     }
 
@@ -72,9 +72,9 @@
     }
 
     .logo{
-        line-height: 50px;
-        padding-left: 30px;
-        padding-bottom: 10px;
+        line-height: 5rem;
+        padding-left: 3rem;
+        padding-bottom: 1rem;
 
     }
 
@@ -92,27 +92,31 @@
     /*RESPONSIVE DESIGN*/
     html, body
     {
-    height: 70vh;
+    height: 80vh;
     }
     body{
-        background-size: 200%;
+        background-size: 100%;
     }
 
-    .bienvenida{
+    html, .second-container
+    {
+        height: 100vh;
+    }
+    .welcome-card{
         flex-basis: 100%;
     }
 
-    .bienvenida-texto{
+    .welcome-content{
         font-weight: normal;
     }
 
-    .seccion1{
+    .welcome-box{
         flex-basis: 100%;
         margin-top: 35%;
     }
 
     /*ABOUT ME*/
-    html, .content1
+    html, .second-container
     {
     height: 100vh;
     }
@@ -120,21 +124,27 @@
     .contenido{
         flex-basis: 100%;
         width: 100%;
-        margin-top: 0px;
+        margin-top: 0;
 
     }
 
-    h1{
+    h3{
         width: 80%;
-        margin: 0px;
-        padding: 30px;
+        margin: 0;
+        padding: 3rem;
     }
 
     #desc{
         width: 93%;
         margin-left: 0%;
         padding-left: 7%;
-        font-size: 19px;
+        font-size: 1.9rem;
+    }
+
+    #desc2{
+        width: 95%;
+        margin-left: 0%;
+        padding-left: 5%;
     }
 
     .profile img{
@@ -146,11 +156,11 @@
     }
 
  .profile2 img{
-        margin:0px auto;
+        margin:0 auto;
 		display:block;
         width: 90%;
         height: auto;
-        border: 10px solid #2B8EEF;
+        border: 1rem solid var(--blue);
         animation: movimiento;
         animation-timing-function: linear;
         animation-duration: 3s;
@@ -159,17 +169,17 @@
 
 .grid .box{
     flex-basis: 49%;
-    border: 1px solid #d1d1d1;
+    border: 1px solid var(--white);
 }
 
 .grid .box:hover{
-    color: #d1d1d1;
+    color: var(--white);
 }
 
-.grid .box2{
+.grid .project-box{
     flex-basis: 90%;
-    margin: 0px;
-    border-bottom: 10px solid #f1f1f1;
+    margin: 0;
+    border-bottom: 1rem solid var(--white);
 }
 
 }

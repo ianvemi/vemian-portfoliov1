@@ -30,13 +30,13 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     font-size: 35px;
     background-color: transparent;
     border: none;
-    color: white;
+    color: var(--white);
     transition: all 400ms;
 }
 
 button:hover{
     transform: scale(1.4,1.4);
-    color: #1d1d1d;
+    color: var(--blue);
 }
 
 .button2{
@@ -44,13 +44,13 @@ button:hover{
     margin-top: 10px;
     background-color: transparent;
     border: none;
-    color: white;
+    color: var(--white);
     transition: all 400ms;
 }
 
 .button2 button:hover{
     transform: scale(1.4,1.4);
-    color: #2B8EEF;
+    color: var(--blue);
 }
 
 
