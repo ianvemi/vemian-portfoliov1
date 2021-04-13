@@ -1,6 +1,60 @@
 
 
 /*MENU RESPONSIVE*/
+@media(max-width: 1062px){
+    .boxes{
+        width: 100%;
+        display:  grid;
+        grid-template-columns: [x0] 1fr ;
+        grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3]1fr [y4] 1fr [y5];
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+
+    .second-container{
+        height: fit-content;
+    }
+    .introbox{
+        grid-column-start: x0;
+        grid-row-start: y0;
+        grid-row-end: y1;
+    }
+    
+    .imagen{
+        grid-column-start: x0;
+        grid-row-start: y1;
+        grid-row-end: y2;
+    }
+    .educationa{
+        grid-column-start: x0;
+        grid-row-start: y2;
+        grid-row-end: y3;
+    
+    }
+    
+    .habs{
+        grid-column-start: x0;
+        grid-row-start: y3;
+        grid-row-end: y4;
+        background-color: var(--black);
+    }
+    
+    .apps{
+        grid-column-start: x0;
+        grid-row-start: y4;
+        grid-row-end: y5;
+    }
+
+    #portfolio{
+        width: 100%;
+        height:fit-content;
+        margin:0 auto;
+    }
+    
+}
+
+
+
 @media (max-width: 900px){
 
     body{
@@ -90,18 +144,11 @@
     }
 
     /*RESPONSIVE DESIGN*/
-    html, body
-    {
-    height: 80vh;
-    }
+
     body{
         background-size: 100%;
     }
 
-    html, .second-container
-    {
-        height: 100vh;
-    }
     .welcome-card{
         flex-basis: 100%;
     }
@@ -116,60 +163,15 @@
     }
 
     /*ABOUT ME*/
-    html, .second-container
-    {
-    height: 100vh;
+
+.introbox{
+        padding-left: 5rem;
+        font-size: 2rem;
+        justify-content: center;
     }
-
-    .contenido{
-        flex-basis: 100%;
-        width: 100%;
-        margin-top: 0;
-
-    }
-
-    h3{
-        width: 80%;
-        margin: 0;
-        padding: 3rem;
-    }
-
-    #desc{
-        width: 93%;
-        margin-left: 0%;
-        padding-left: 7%;
-        font-size: 1.9rem;
-    }
-
-    #desc2{
-        width: 95%;
-        margin-left: 0%;
-        padding-left: 5%;
-    }
-
-    .profile img{
-         display: none;
-        }
-    
-    .profile2{
-        display: flex;
-    }
-
- .profile2 img{
-        margin:0 auto;
-		display:block;
-        width: 90%;
-        height: auto;
-        border: 1rem solid var(--blue);
-        animation: movimiento;
-        animation-timing-function: linear;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-         }
 
 .grid .box{
     flex-basis: 49%;
-    border: 1px solid var(--white);
 }
 
 .grid .box:hover{
@@ -179,7 +181,6 @@
 .grid .project-box{
     flex-basis: 90%;
     margin: 0;
-    border-bottom: 1rem solid var(--white);
 }
 
 }

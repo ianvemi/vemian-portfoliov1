@@ -15,9 +15,10 @@
 /*GENERAL*/
 :root{
     --blue: #2B8EEF; 
-    --white: #f0f0f0;
+    --white: #d6d6d6;
     --black: #1d1d1d; 
     --blue-gradient:linear-gradient(121deg, rgba(29,29,29,1) 0%, rgba(50,149,245,1) 85%);
+    --second-blue: #3ec2ff;
 }
 
 *{
@@ -25,19 +26,14 @@
     margin: 0rem;
 }
 
-.clearfix{
-    clear: both;
-    float: none;
-}
-
 html{
     font-size: 62.5%;
 }
 
 body{
-    background: var(--blue-gradient);
-    background-size: 100%;
+    background:transparent;
     font-size: 1.6rem;
+    background: var(--blue-gradient);
 }
 
 html, body
@@ -47,7 +43,8 @@ html, body
 /*HEADER*/
 .first-container{
     width: 100%;
-    height: 100%;
+    height: 85%;
+    background: transparent;
 }
 
 nav{
@@ -153,7 +150,7 @@ color: var(--blue);
 }
 
 .welcome-card{
-    flex-basis: 45%;
+    flex-basis: 40%;
     background-color: var(--black);
     transition: all 900ms;
     text-align: center;
@@ -191,148 +188,144 @@ color: var(--blue);
     color: var(--blue);
     font-weight: bold;
 }
-/*CONTENT*/
-html, .second-container
-{
-    height:fit-content;
-}
+/*CONTENT ABOUT ME*/
 .second-container{
-    background: #1d1d1d;
+    background:#1a1a1a;
     color: var(--white);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.boxes{
+    width: 70%;
+    height: 100%;
+    display:  grid;
+    margin: 0 auto;
+    grid-template-columns: [x0] 1fr [x1] 1fr;
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3]1fr [y4] 1fr [y5];
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.introbox{
+    grid-column-start: x0;
+    grid-column-end: x2;
+    grid-row-start: y0;
+    grid-row-end: y1;
+    background-color: var(--black);
+    padding-left: 10rem;
+    font-size: 2rem;
     justify-content: center;
-    flex-grow:1;
-    flex-wrap: wrap;
 }
 
-.contenido{
-    flex-basis: 70%;
-    margin-top: 5rem;
-    font-family: "Century Gothic";
-    box-shadow: 2.3rem 1.7rem 3.6rem -0.5rem rgba(0,0,0,0.54);
-}
-/*ABOUT ME STYLES*/
-
-#aboutme h2{
-display: block;
-text-align: right;
-background-color: #2c2c2c;
-height: 2rem;
-padding: 2rem;
-color: var(--white);
+.introbox h2{
+    margin-bottom: 2rem ;
 }
 
-.layout{
-    flex-grow: 1;
-    margin: 0;
-    width: 100%;
+.introbox h4{
+    color: var(--second-blue);
+    font-weight: normal;
+}
+.imagen{
+    grid-column-start: x0;
+    grid-column-end: x1;
+    grid-row-start: y1;
+    grid-row-end: y3;
+    background-color: var(--black);
+}
+.educationa{
+    grid-column-start: x1;
+    grid-column-end: x2;
+    grid-row-start: y1;
+    grid-row-end: y3;
+    background-color: var(--black);
+
 }
 
-.block{
-    width: 100%;
+.educationa ul li span{
+    display: block;
+    font-size: 1.5rem;
+}
+
+.habs{
+    grid-column-start: x0;
+    grid-column-end: x1;
+    grid-row-start: y3;
+    grid-row-end: y5;
     background-color: var(--black);
 }
 
-.block2{
-    width: 100%;
-    background-color: var(--white);
-}
-
-.block2 h2{
-    display: block;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-h3{
-    width: 75%;
-    margin-left: 25%;
-    background-color: var(--black);
-    display: block;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-size: 2.0rem;
-}
-
-.layout h4{
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
-    font-size: 3.0rem;
-}
-
-#desc{
-    width: 75%;
-    padding-left: 25%;
-    background-color: var(--white);
-    color: #1d1d1d;
-    font-size: 2.2rem; 
-    transition: all 0.4s;
-    font-weight: normal;
-}
-
-#desc:hover{
-    background: linear-gradient(266deg, rgba(0,64,126,1) 0%, rgba(43,142,239,1) 100%);
-    color: var(--white);
-}
-
-#desc2{
-    width: 75%;
-    padding-left: 25%;
-    background-color: var(--white);
-    color: var(--black);
-    font-size: 2.2rem; 
-    transition: all 0.4s;
-    font-weight: normal;
-}
-
-#desc2:hover{
-    background: linear-gradient(266deg, rgba(0,64,126,1) 0%, rgba(43,142,239,1) 100%);
-    color: var(--white);
-}
-
-.school{
+.skil{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-}
-.school span{
-    flex-direction: row;
-    flex-basis: 100%;
-    font-size: 1.5rem; 
-    padding: 1rem;
-    font-weight: bold;
 }
 
-.school h4{
-    margin-left: 1rem ;
-    padding: 1rem;
-    padding-bottom: 2.3rem;
-    font-weight: normal;
-    font-size: 2.0rem;
+.skil ul{
+    margin-right: 10%;
+}
+.apps{
+    grid-column-start: x1;
+    grid-column-end: x2;
+    grid-row-start: y3;
+    grid-row-end: y5;
+    background-color: var(--black);
 }
 
-/*SKILLS - HOBBIES- PORTAFOLIO BOXES*/
+.metro{
+    font-family: "Century Gothic";
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+    border: 3px solid transparent;
+   
+}
+
+.metro:hover{
+    border: 3px solid var(--second-blue);
+}
+
+.metro ul{
+    list-style:none;
+    margin-left: 4rem;
+    padding-left: 1.5rem;
+    font-size: 1.9rem;
+    border-left: 4px solid var(--second-blue);
+
+}
+
+.metro ul li{
+    margin-bottom: 2rem;
+}
+
+.metro h3{
+    color: var(--second-blue);
+    font-weight: bolder;
+    font-size: 2rem;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    margin-bottom: 3rem;
+}
+
+.educationa ul li{
+    margin-bottom: 6%;
+}
+
+.ian-img{
+    background: url("../images/i.jpg");
+    background-position: center;
+    background-size: contain;
+}
+
+.third-container{
+    background-color: #1d1d1d;
+}
+
+/* PORTAFOLIO BOXES*/
 .grid{
     display: block;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-}
-
-.grid .box{
-    flex-basis: 15%;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    height:8rem;
-    text-align: center;
-    line-height: 8rem;
-    background-color: var(--white);
-    border: none;
-    font-size: 1.8rem; 
-    color: var(--black);
 }
 
 .grid .project-box {
@@ -347,6 +340,8 @@ h3{
     font-size: 1.8rem; 
     color: var(--black);
     margin: 0.2rem;
+    background-size:100%;
+    background-position:center;
 }
 
 .grid .project-box:hover .description{
@@ -388,138 +383,6 @@ h3{
     }
 }
 
-/*HOBBIES COLORS*/
-.hobbie{
-    color: var(--black);
-    transition: all 1s;
-    box-shadow: inset 0 0 0 0.02px   var(--blue);
-}
-
-.hobbie:hover{
-    box-shadow: inset 100vmin 0 0 0 var(--blue);
-    color: var(--white);
-    font-weight: bold;
-}
-/*SKILLS COLORS*/
-.html{
-    transition: ease-out 1s;
-    box-shadow: inset 0 0 0 0.02px   #ffa824;
-}
-.html:hover{
-    box-shadow: inset 100vmin 0 0 0 #ffa824;
-    color: var(--white);
-    font-weight: bold;
-}
-
-.php{
-    transition: ease-out 1s;
-    box-shadow: inset 0 0 0 0.02px   #4380bd;
-}
-
-.php:hover{
-    box-shadow: inset 100vmin 0 0 0 #4380bd;
-    color: var(--white);
-    font-weight: bold;
-}
-
-.css{
-    transition: ease-out 1s;
-    box-shadow: inset 0 0 0 0.02px   #3d4aff;
-}
-
-.css:hover{
-    box-shadow: inset 100vmin 0 0 0 #3d4aff;
-    color: var(--white);
-    font-weight: bold;
-}
-
-.JS{
-    transition: ease-out 1s;
-    box-shadow: inset 0 0 0 0.02px   #ffe75d;
-}
-
-.JS:hover{
-    box-shadow: inset 100vmin 0 0 0 #ffe75d;
-    color:var(--black);
-    font-weight: bold;
-}
-
-.angular{
-    transition: ease-out 1s;
-    box-shadow: inset 0 0 0 0.02px #ff3b3b;
-}
-
-.angular:hover{
-    box-shadow: inset 100vmin 0 0 0 #ff3b3b;
-    color: var(--white);
-    font-weight: bold;
-}
-
-.sql{
-    transition: ease-out 1s;
-    box-shadow: inset 0 0 0 0.02px   #0a3d6d;
-}
-
-.sql:hover{
-    box-shadow: inset 100vmin 0 0 0 #0a3d6d;
-    color: var(--white);
-    font-weight: bold;
-}
-
-.adobe{
-    transition: ease-out 1s;
-    box-shadow: inset 0 0 0 0.02px   #b32626;
-}
-
-.adobe:hover{
-    box-shadow: inset 100vmin 0 0 0 #b32626;
-    color: var(--white);
-    font-weight: bold;
-}
-
-.nodejs{
-    transition: ease-out 1s;
-    box-shadow: inset 0 0 0 0.02px   #2ea351;
-}
-
-.nodejs:hover{
-    box-shadow: inset 100vmin 0 0 0 #2ea351;
-    color: var(--white);
-    font-weight: bold;
-}
-
-/*PROFILE IMAGE*/
- .profile img{
-    border: 1rem solid var(--blue);
-     position: absolute;
-     right: 70%;
-     width: 15%;
-     z-index: 50;
-     animation: movimiento;
-     animation-timing-function: linear;
-     animation-duration: 3s;
-     animation-iteration-count: infinite;
-     box-shadow: 2.3rem 1.7rem 3.6rem -0.5rem rgba(0,0,0,0.54);
- }
-
- .profile2{
-     display: none;
- }
-
- @keyframes movimiento{
-     0%{
-        transform: translateY(0);
-     }
-
-     50%{
-        transform: translateY(3rem);
-     }
-
-     100%{
-        transform: translateY(0);
-     }
- }
-
  footer{
      font-family: "Century Gothic";
      font-size: 1.5rem; 
@@ -530,9 +393,15 @@ h3{
      width: 100%;
      text-align: center;
      line-height: 5rem;
+     background-color: #1d1d1d;
  }
  
 /*PORTFOLIO PROJECTS*/
+#portfolio{
+    width: 70%;
+    height:fit-content;
+    margin:0 auto;
+}
 #portfolio h2{
     display: block;
     text-align: right;
@@ -541,41 +410,35 @@ h3{
     padding: 2rem;
     color: var(--white);
 }
+
+#portfolio p{
+    display: block;
+    padding: 4rem;
+    color: #d6d6d6;
+    font-size: 3rem;
+}
 .goodbeats{
     background-image: url("../images/goodbeats.jpg");
-    background-size:100%;
-    background-position:center;
 }
 
 .cw{
     background-image: url("../images/cw.jpg");
-    background-size:100%;
-    background-position:center;
 }
 
 .vemian-times{
     background-image: url("../images/vem_times.jpg");
-    background-size:100%;
-    background-position:center;
 }
 
 .tqs{
     background-image: url("../images/tqs.jpg");
-    background-size:100%;
-    background-position:center;
 }
 
  .layout1{
     background-image: url("../images/blog.jpg");
-    background-size: 100%;
-    background-position:center;
 }
 
 .layout2{
-    display: block;
     background-image: url("../images/portfolio.jpg");
-    background-size: 100%;
-    background-position:center;
 }
 
 
