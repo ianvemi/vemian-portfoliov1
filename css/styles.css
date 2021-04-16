@@ -4,6 +4,7 @@
     src: url('fonts/CenturyGothic.ttf');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face{
@@ -11,6 +12,7 @@
     src: url('fonts/CaviarDreams.ttf');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 /*GENERAL*/
 :root{
@@ -34,6 +36,15 @@ body{
     background:transparent;
     font-size: 1.6rem;
     background: var(--blue-gradient);
+}
+
+body::-webkit-scrollbar{
+    width: .7rem;
+    background-color: #1d1d1d;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--blue);
 }
 
 html, body
@@ -181,6 +192,13 @@ color: var(--blue);
     padding-top:1.5rem;
     padding-bottom: 1.5rem;
     transition: all 900ms;
+
+    /*NON VISIBLE ANIMATIONS*/
+    opacity: 0;
+    transform: translateY(50rem) rotateZ(0deg);
+    transition: transform 90s .5s cubic-bezier(.1,.8,2,2);
+    opacity: 5s 5s ease-out;
+    will-change: transform, opacity;
 }
 
 .welcome-content ian{
@@ -190,11 +208,19 @@ color: var(--blue);
 }
 /*CONTENT ABOUT ME*/
 .second-container{
-    background:#1a1a1a;
+    background:#111111;
     color: var(--white);
     width: 100%;
     margin: 0 auto;
     height: 100vh;
+}
+
+.fourth-container{
+    background:#111111;
+    color: var(--white);
+    width: 100%;
+    margin: 0 auto;
+    height: fit-content;
 }
 
 .boxes{
@@ -206,7 +232,25 @@ color: var(--blue);
     grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3]1fr [y4] 1fr [y5];
     grid-row-gap: 20px;
     grid-column-gap: 20px;
+    overflow: hidden;
 }
+
+.box2{
+    width: 70%;
+    height: 100%;
+    display:  grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    overflow: hidden;
+}
+
+.boxes .portfolio{
+    height: 100%;
+    width: 70%;
+    display: grid;
+}
+
 .introbox{
     grid-column-start: x0;
     grid-column-end: x2;
@@ -262,6 +306,7 @@ color: var(--blue);
 
 .skil ul{
     margin-right: 10%;
+    margin-bottom: 10%;
 }
 .apps{
     grid-column-start: x1;
@@ -277,9 +322,39 @@ color: var(--blue);
     flex-direction: column;
     transition: all 1s;
     border: 3px solid transparent;
+
+    opacity: 0;
+    transform: translateX(50rem) rotateZ(0deg);
+    transition: transform 2s .5s cubic-bezier(.1,.8,2,2);
+    opacity: 5s 5s ease-out;
+    will-change: transform, opacity;
    
 }
 
+.metro2{
+    font-family: "Century Gothic";
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+    border: 3px solid transparent;
+
+    height:35rem;
+    text-align: center;
+    line-height: 5rem;
+    background-color:var(--white);
+    border: none;
+    font-size: 1.8rem; 
+    color: var(--black);
+    margin: 0.2rem;
+    background-size:100%;
+    background-position:center;
+
+    opacity: 0;
+    transform: translateX(-50rem) rotateZ(10deg);
+    transition: transform 2s .5s cubic-bezier(.1,.8,2,2);
+    opacity: 5s 5s ease-out;
+    will-change: transform, opacity;
+}
 .metro:hover{
     border: 3px solid var(--second-blue);
 }
@@ -311,45 +386,19 @@ color: var(--blue);
 }
 
 .ian-img{
-    background: url("../images/i.jpg");
+    background: url("../images/i.webp");
     background-position: center;
     background-size: contain;
 }
 
-.third-container{
-    background-color: #1d1d1d;
-}
-
 /* PORTAFOLIO BOXES*/
-.grid{
-    display: block;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
 
-.grid .project-box {
-    flex-basis: 45%;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    height:35rem;
-    text-align: center;
-    line-height: 5rem;
-    background-color:var(--white);
-    border: none;
-    font-size: 1.8rem; 
-    color: var(--black);
-    margin: 0.2rem;
-    background-size:100%;
-    background-position:center;
-}
-
-.grid .project-box:hover .description{
+.box2 .metro2:hover .description{
     display:block;
     animation: menu 0.5s ease-in-out both;
 }
 
-.grid .project-box a{
+.box2 .metro2 a{
     width: 100%;
     padding:3rem;
     text-decoration: none;
@@ -358,7 +407,10 @@ color: var(--blue);
     font-size: 2rem;
 }
 
+
 .description{
+    flex-basis: 100%;
+    width: 100%;
     margin: 0 auto;
     display: none;
     height: 100%;
@@ -401,6 +453,8 @@ color: var(--blue);
     width: 70%;
     height:fit-content;
     margin:0 auto;
+    font-family: 'Century Gothic';
+
 }
 #portfolio h2{
     display: block;
@@ -417,28 +471,39 @@ color: var(--blue);
     color: #d6d6d6;
     font-size: 3rem;
 }
-.goodbeats{
-    background-image: url("../images/goodbeats.jpg");
+
+.goodbeats2{
+    height: 100%;
+    background-image: url("../images/goodbeats.webp");
+    grid-column: 1/2;
+    grid-row: 1/2;
+
 }
 
-.cw{
-    background-image: url("../images/cw.jpg");
+.cw2{
+    background-image: url("../images/cw.webp");
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+
 }
 
-.vemian-times{
-    background-image: url("../images/vem_times.jpg");
+.vemian-times2{
+    background-image: url("../images/vem_times.webp");
+
 }
 
-.tqs{
-    background-image: url("../images/tqs.jpg");
+.tqs2{
+    background-image: url("../images/tqs.webp");
+    
 }
 
- .layout1{
-    background-image: url("../images/blog.jpg");
+.layout12{
+    background-image: url("../images/blog.webp");
 }
 
-.layout2{
-    background-image: url("../images/portfolio.jpg");
+.layout22{
+    background-image: url("../images/portfolio.webp");
 }
 
 

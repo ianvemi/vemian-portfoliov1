@@ -1,0 +1,15 @@
+.welcome-content.is-visible{
+    opacity: 1;
+    transform: rotateZ(0deg);
+
+}
+.metro.is-visible{
+    opacity: 1;
+    transform: rotateZ(0deg);
+}
+
+.metro2.is-visible{
+    opacity: 1;
+    transform: rotateZ(0deg);
+}
+

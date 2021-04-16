@@ -1,5 +1,9 @@
 
-/*MENU RESPONSIVE*/ 
+/*PRELOAD HTML COMPONENTS*/
+window.addEventListener('load', function () {
+
+
+    /*MENU RESPONSIVE*/ 
 const ham = document.querySelector('.ham');
 const enlaces = document.querySelector('.menu ul');
 const barras = document.querySelectorAll('.ham span');
@@ -11,3 +15,9 @@ ham.addEventListener('click', () => {
 enlaces.addEventListener('click',() =>{
     enlaces.classList.toggle('activado');
 });
+
+
+});
+
+
+
