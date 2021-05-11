@@ -1,0 +1,107 @@
+body.light{
+    background: #e8e8e8;
+}
+
+body.light .welcome-card{
+    border-radius: 50px;
+    background: #e8e8e8;
+    box-shadow:  20px 20px 60px #c5c5c5,
+                 -20px -20px 60px #ffffff;
+
+}
+
+body.light .welcome-card:hover{
+    color: var(--clearblue);
+}
+
+
+
+
+body.light .welcome-content{
+    color: #585858;
+}
+
+body.light .welcome-content ian{
+    color: #2e2e2e;
+}
+
+body.light .second-container{
+    background: #eceaea;
+    color: var(--black);
+}
+
+body.light .fourth-container{
+    background: #eceaea;
+    color: var(--black);
+}
+
+body.light .introbox h4{
+    color: #0a65c0;
+    font-weight: bold;
+}
+
+body.light .metro{
+    border-radius: 2rem;
+background: linear-gradient(145deg, #e0e0e0, #f8f8f8);
+box-shadow:  10px 10px 20px #c5c5c5,
+             -10px -10px 20px #ffffff;
+}
+body.light .metro ul{
+    border-left: 4px solid #0c7ef0;
+}
+
+body.light .metro h3{
+    color: #0a65c0;
+    font-weight: bold;
+}
+
+body.light footer{
+    background: var(--whitemode);
+    color: var(--black);
+}
+
+body.light #portfolio h2{
+    background: var(--whitemode);
+    color: var(--black);
+}
+
+body.light #portfolio p{
+    color: var(--black);
+}
+
+body.light .ian-img{
+    background: url("../images/iw.webp");
+    background-position: center;
+    background-size: contain;
+    
+}
+
+body.light #header{
+    background: transparent;
+}
+
+body.light .menu ul{
+    background-color: white;
+}
+
+body.light .menu ul li a{
+    color: var(--black);
+    font-weight: bold;
+}
+
+body.light .menu ul li :hover{
+    color:var(--white);
+}
+
+body.light .logo a{
+    color: var(--black);
+    }
+
+body.light .ham span{
+background: var(--black);
+}
+
+body.light .description{
+    background: rgba(255, 255, 255, 0.63);
+    color: black;
+}

@@ -1,6 +1,4 @@
 
-window.addEventListener('load', function(){
-
 //Detect animation frame rate
 var scroll = window.requestAnimationFrame || function(callback){window.setTimeout(callback, 1000/60)};
 
@@ -17,15 +15,11 @@ function loop(){
     scroll(loop);
 }
 
-//Calling the function
+//CALLING THE FUNCTION
 loop();
 
 // Helper function from: http://stackoverflow.com/a/7557433/274826
 function isElementInViewport(el) {
-    // special bonus for those using jQuery
-    if (typeof jQuery === "function" && el instanceof jQuery) {
-      el = el[0];
-    }
     var rect = el.getBoundingClientRect();
     return (
       (rect.top <= 0
@@ -38,6 +32,6 @@ function isElementInViewport(el) {
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
     );
   }
-});
+
 
 

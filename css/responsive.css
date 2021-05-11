@@ -9,6 +9,7 @@
         grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3]1fr [y4] 1fr [y5];
         grid-row-gap: 20px;
         grid-column-gap: 20px;
+        padding: 0;
     }
 
     .box2{
@@ -67,7 +68,6 @@
         grid-column-start: x0;
         grid-row-start: y3;
         grid-row-end: y4;
-        background-color: var(--black);
     }
     
     .apps{
@@ -95,6 +95,11 @@
 
     body{
         /*overflow: hidden;*/
+    }
+
+    .welcome-content ian{
+        font-size: 11.0rem; 
+        
     }
 
     .ham{
@@ -143,7 +148,8 @@
         color:var(--white);
         font-weight: bold;
         box-shadow: none;
-        background-color: transparent;
+        background-color:#0062b8dc;
+        border-radius: 1rem;
     }
 
 
@@ -159,6 +165,7 @@
     .menu ul.activado{
         display: flex;
         animation: menu 1s ease-in-out both;
+        background-color: #1111119a;
     }
 
     .logo{
@@ -197,6 +204,7 @@
         flex-basis: 100%;
         margin-top: 35%;
     }
+
 
     /*ABOUT ME*/
 

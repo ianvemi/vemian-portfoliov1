@@ -36,6 +36,14 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 
 button:hover{
     transform: scale(1.4,1.4);
+    color: #c5c5c5;
+}
+
+body.light .button{
+    color: #464646;
+}
+
+body.light .button:hover{
     color: var(--blue);
 }
 
@@ -52,7 +60,6 @@ button:hover{
     transform: scale(1.4,1.4);
     color: var(--blue);
 }
-
 
 .flaticon-cv-y-cv:before {
     content: "\f101";
