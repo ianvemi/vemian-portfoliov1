@@ -5,7 +5,7 @@ var scroll = window.requestAnimationFrame || function(callback){window.setTimeou
 var elementsToShow = document.querySelectorAll('.showOn');
 
 function loop(){
-    elementsToShow.forEach(function(element){
+    elementsToShow.forEach( element =>{
         if(isElementInViewport(element)){
             element.classList.add('is-visible');
         }else{
