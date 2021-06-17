@@ -102,6 +102,6 @@ background: var(--black);
 }
 
 body.light .description{
-    background: rgba(255, 255, 255, 0.63);
+    background: rgba(255, 255, 255, 0.76);
     color: black;
 }

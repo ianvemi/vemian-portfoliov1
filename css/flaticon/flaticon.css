@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "flaticon";
-    src: url("./flaticon.ttf?6ae22314f0bdff9bf547995d992a983c") format("truetype"),
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?6ae22314f0bdff9bf547995d992a983c") format("truetype"),
 url("./flaticon.woff?6ae22314f0bdff9bf547995d992a983c") format("woff"),
 url("./flaticon.woff2?6ae22314f0bdff9bf547995d992a983c") format("woff2"),
 url("./flaticon.eot?6ae22314f0bdff9bf547995d992a983c#iefix") format("embedded-opentype"),
@@ -8,77 +8,87 @@ url("./flaticon.svg?6ae22314f0bdff9bf547995d992a983c#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-    font-family: flaticon !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .buttons{
-    display: flex;
-    margin-top: 30px;
+  display: flex;
+  margin-top: 30px;
 }
 .button{
-    width: 100%;
-    flex-flow: wrap;
-    flex-wrap: wrap;
-    height: 40px;
-    font-size: 35px;
-    background-color: transparent;
-    border: none;
-    color: var(--white);
-    transition: all 400ms;
+  width: 100%;
+  flex-flow: wrap;
+  flex-wrap: wrap;
+  height: 40px;
+  font-size: 35px;
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  transition: all 400ms;
 }
 
 button:hover{
-    transform: scale(1.4,1.4);
-    color: #c5c5c5;
+  transform: scale(1.4,1.4);
+  color: #c5c5c5;
 }
 
 body.light .button{
-    color: #464646;
+  color: #464646;
 }
 
 body.light .button:hover{
-    color: var(--blue);
+  color: var(--blue);
 }
 
 .button2{
-    font-size: 45px;
-    margin-top: 10px;
-    background-color: transparent;
-    border: none;
-    color: var(--white);
-    transition: all 400ms;
+  font-size: 45px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  transition: all 400ms;
 }
 
 .button2 button:hover{
-    transform: scale(1.4,1.4);
-    color: var(--blue);
+  transform: scale(1.4,1.4);
+  color: #4e94d1;
+}
+
+#b-cv{
+  color: var(--white);
+  font-size: 5rem;
+  background: #0069c5;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  line-height: 10rem;
 }
 
 .flaticon-cv-y-cv:before {
-    content: "\f101";
+  content: "\f101";
 }
 .flaticon-facebook:before {
-    content: "\f102";
+  content: "\f102";
 }
 .flaticon-github:before {
-    content: "\f103";
+  content: "\f103";
 }
 .flaticon-instagram:before {
-    content: "\f104";
+  content: "\f104";
 }
 .flaticon-linkedin:before {
-    content: "\f105";
+  content: "\f105";
 }
 .flaticon-live:before {
-    content: "\f106";
+  content: "\f106";
 }
 .flaticon-whatsapp:before {
-    content: "\f107";
+  content: "\f107";
 }

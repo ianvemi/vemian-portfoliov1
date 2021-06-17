@@ -23,8 +23,6 @@
     font-display: swap;
 }
 
-
-
 /*GENERAL*/
 :root{
     --blue: #2B8EEF; 
@@ -53,12 +51,13 @@ body{
 }
 
 body::-webkit-scrollbar{
-    width: .7rem;
+    width: 0rem;
     background-color: #1d1d1d;
 }
 
 body::-webkit-scrollbar-thumb{
     background-color: var(--blue);
+    border-radius: 5rem;
 }
 
 html, body
@@ -74,6 +73,11 @@ html, body
 
 nav{
     padding-top: 1rem;
+}
+
+button{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    outline: none;
 }
 
 #header{
@@ -113,8 +117,8 @@ nav{
 .menu ul li :hover{
     color:var(--white);
     font-weight: bold;
-    box-shadow: inset 15.0rem 0 0 0  #0062b8;
-    border-radius: 2rem;
+    background: #0062b8;
+    border-radius: 5rem;
 }
 
 .menu ul li a{
@@ -134,7 +138,7 @@ nav{
     text-align: center;
     line-height: 5.0rem;
     font-size: 1.6rem; 
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .logo:hover a{
@@ -178,6 +182,11 @@ color: var(--blue);
     display: flex;
     outline: none;
     background-color:#d6d6d6;
+    transition: all 400ms;
+}
+
+.switch:hover{
+    transform: scale(1.4);
 }
 
 .switch span{
@@ -228,10 +237,10 @@ color: var(--blue);
     background-color: var(--black);
     text-align: center;
     transition: ease-out 1s;
-    border-radius: 50px;
+    border-radius: 9rem;
     background: linear-gradient(145deg, #0069c5, #0058a6);
     box-shadow:  39px 39px 78px #004c90,
-             -39px -39px 78px #0078e0;
+             -39px -39px 78px #0077e0d8;
 }
 .welcome-card:hover{
     color: var(--white);
@@ -242,10 +251,10 @@ color: var(--blue);
     margin: 0 auto;
     font-size: 2.5rem; 
     font-weight: bold;
-    padding: 3rem;
     padding-top:1.5rem;
     padding-bottom: 1.5rem;
     border-radius: 1rem;
+    overflow: hidden;
     /*NON VISIBLE ANIMATIONS*/
     opacity: 0;
     transform: translateY(50rem);
@@ -255,13 +264,35 @@ color: var(--blue);
 
 .welcome-content ian{
     display: block;
+    width: 100%;
+    padding: 2rem;
     font-size: 16.0rem; 
-    color: white;
     font-weight: lighter;
     font-family: "Catch";
-    
-    
+    color: transparent;
+    background-image: linear-gradient(to left, #ffffff70,#ffffff11, #ffffff48,#ffffffdc);
+    -webkit-background-clip:text;
+    background-clip: text;
+    animation: textgradient 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -webkit-background-size: 600%;
+    background-size: 600%;
 }
+
+@keyframes textgradient{
+    0%{
+background-position: 0 100%;
+    }
+    50%{
+background-position: 100% 0;
+    }
+    100%{
+background-position: 0 100%;
+    }
+}
+
+
 /*CONTENT ABOUT ME*/
 .second-container{
     background:#111111;
@@ -291,6 +322,7 @@ color: var(--blue);
     grid-column-gap: 20px;
     overflow: hidden;
     padding: 5rem;
+    border: none;
 }
 
 .box2{
@@ -303,6 +335,7 @@ color: var(--blue);
     overflow: hidden;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
+    border: none;
 }
 
 .boxes .portfolio{
@@ -336,7 +369,7 @@ color: var(--blue);
     grid-column-end: x1;
     grid-row-start: y1;
     grid-row-end: y3;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 .educationa{
     grid-column-start: x1;
@@ -427,6 +460,23 @@ color: var(--blue);
     margin-bottom: 3rem;
 }
 
+.introbox{
+    display: flex;
+    flex-direction: row;
+}
+
+.name-intro{
+    flex-basis: 50%;
+    margin-top: 3%;
+}
+
+.cv{
+    flex-basis: 50%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+
 .educationa ul li{
     margin-bottom: 6%;
 }
@@ -481,7 +531,7 @@ color: var(--blue);
     display: none;
     height: 100%;
     opacity: 0;
-    background-color: #3a3a3ab0;
+    background-color: #272727c4;
     color: var(--white);
     text-align: center;
     border-radius: 1rem;
@@ -541,7 +591,7 @@ color: var(--blue);
 
 .goodbeats2{
     height: 100%;
-    background-image: url("../images/goodbeats.webp");
+    background-image: url("../images/photograph.webp");
     grid-column: 1/2;
     grid-row: 1/2;
 
@@ -554,7 +604,7 @@ color: var(--blue);
 }
 
 .vemian-times2{
-    background-image: url("../images/vem_times.webp");
+    background-image: url("../images/foody.webp");
 }
 
 .tqs2{

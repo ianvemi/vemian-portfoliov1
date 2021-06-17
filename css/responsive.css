@@ -84,7 +84,14 @@
 
     .welcome-card{
         flex-basis: 80%;
+    }
 
+    .cv{
+        margin-top: 15%;
+    }
+    
+    .name-intro{
+        margin-top: 15%;
     }
     
 }
@@ -93,13 +100,8 @@
 
 @media (max-width: 900px){
 
-    body{
-        /*overflow: hidden;*/
-    }
-
     .welcome-content ian{
-        font-size: 11.0rem; 
-        
+        font-size: 16.0rem;
     }
 
     .ham{
@@ -212,6 +214,7 @@
         padding-left: 5rem;
         font-size: 2rem;
         justify-content: center;
+        flex-direction: column;
     }
 
 .grid .box{
@@ -225,6 +228,18 @@
 .grid .project-box{
     flex-basis: 90%;
     margin: 0;
+}
+
+.cv{
+    margin-top: 3%;
+    flex-basis: 100%;
+    margin-bottom: 2%;
+    text-align: left;
+}
+
+.name-intro{
+    margin-top: 15%;
+    flex-basis: 100%;
 }
 
 }
