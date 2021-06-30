@@ -26,7 +26,7 @@
 /*GENERAL*/
 :root{
     --blue: #2B8EEF; 
-    --white: #d6d6d6;
+    --white: #dfdfdf;
     --black: #1d1d1d; 
     --blue-gradient:linear-gradient(121deg, rgba(29,29,29,1) 0%, rgba(50,149,245,1) 85%);
     --second-blue: #5099e2;
@@ -51,7 +51,7 @@ body{
 }
 
 body::-webkit-scrollbar{
-    width: 0rem;
+    width: 0.5rem;
     background-color: #1d1d1d;
 }
 
@@ -63,6 +63,18 @@ body::-webkit-scrollbar-thumb{
 html, body
 {
     height: 100vh;
+}
+
+*::selection {
+    background:#379bff;
+    color:#101010;
+    
+}
+
+/* Firefox */
+*::-moz-selection {
+    background:#379bff;
+    color:#101010;
 }
 /*HEADER*/
 .first-container{
@@ -234,10 +246,10 @@ color: var(--blue);
 
 .welcome-card{
     flex-basis: 40%;
+    border-radius: 50px;
     background-color: var(--black);
     text-align: center;
     transition: ease-out 1s;
-    border-radius: 9rem;
     background: linear-gradient(145deg, #0069c5, #0058a6);
     box-shadow:  39px 39px 78px #004c90,
              -39px -39px 78px #0077e0d8;
@@ -514,6 +526,8 @@ background-position: 0 100%;
     animation: menu 0.5s ease-in-out both;
 }
 
+
+
 .box2 .metro2 a{
     width: 100%;
     padding:3rem;
@@ -534,11 +548,21 @@ background-position: 0 100%;
     background-color: #272727c4;
     color: var(--white);
     text-align: center;
-    border-radius: 1rem;
+}
+
+.description p{
+    background-color: #242424;
+}
+
+.description span{
+    display: block;
+    width: 100%;
+    background-color:#0062b8;
+    font-weight: bold;
 }
 
 .buttons-project{
-    background-color: var(--black);
+    background-color: #1d1d1dcb;
     margin:0 auto;
     padding: 3%;
 }
@@ -589,18 +613,14 @@ background-position: 0 100%;
     font-size: 3rem;
 }
 
-.goodbeats2{
-    height: 100%;
-    background-image: url("../images/photograph.webp");
-    grid-column: 1/2;
-    grid-row: 1/2;
-
-}
 
 .cw2{
     background-image: url("../images/cw.webp");
-    grid-column: 2/3;
-    grid-row: 1/2;
+    
+}
+
+.shopcart{
+    background-image: url("../images/ShopCart.webp");
 }
 
 .vemian-times2{

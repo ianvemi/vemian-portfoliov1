@@ -101,7 +101,22 @@ body.light .ham span{
 background: var(--black);
 }
 
+
+
 body.light .description{
-    background: rgba(255, 255, 255, 0.76);
+    background-color: #4d4d4d98;
+    color: var(--white);
+}
+
+body.light .description p{
+    background-color: var(--white);
     color: black;
+}
+
+body.light .description span{
+    background-color:#3792e2;
+}
+
+body.light .buttons-project{
+    background-color: #ffffffcb;
 }

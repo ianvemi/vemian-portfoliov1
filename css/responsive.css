@@ -14,33 +14,8 @@
 
     .box2{
         width: 100%;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: auto;
         grid-template-rows: repeat(6, 1fr);
-    }
-
-    .goodbeats2{
-       grid-row: 1/2;
-    }
-    
-    .cw2{
-        grid-row: 2/3;
-        grid-column: 1/2;
-    }
-    
-    .vemian-times2{
-        grid-row: 3/4;
-    }
-    
-    .tqs2{
-        grid-row: 4/5; 
-    }
-    
-    .layout12{
-        grid-row: 5/6;
-    }
-    
-    .layout22{
-        grid-row: 6/7;
     }
 
     .second-container{
@@ -196,15 +171,19 @@
 
     .welcome-card{
         flex-basis: 100%;
+        border-radius: 0;
     }
 
     .welcome-content{
         font-weight: normal;
+        border-radius: 0;
     }
 
     .welcome-box{
         flex-basis: 100%;
-        margin-top: 35%;
+        margin-top: 20%;
+        border-radius: 0;
+        
     }
 
 
@@ -217,18 +196,25 @@
         flex-direction: column;
     }
 
-.grid .box{
-    flex-basis: 49%;
-}
+    .metro{
+        border-radius: 0;
+    }
+    
+    .metro2{
+        border-radius: 0;
+    }
 
-.grid .box:hover{
-    color: var(--white);
-}
+    body.light .welcome-card{
+        border-radius: 0 !important;
+    }
 
-.grid .project-box{
-    flex-basis: 90%;
-    margin: 0;
-}
+    body.light .metro{
+        border-radius: 0 !important;
+    }
+
+    body.light .metro2{
+        border-radius: 0 !important;
+    }
 
 .cv{
     margin-top: 3%;
