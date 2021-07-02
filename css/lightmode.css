@@ -1,122 +1,119 @@
-body.light{
-    background: #e8e8e8;
+body.light {
+  background: #e8e8e8;
 }
 
-body.light .welcome-card{
-    border-radius: 50px;
-    background: #e8e8e8;
-    box-shadow:  20px 20px 60px #c5c5c5,
-                 -20px -20px 60px #ffffff;
-
+body.light .welcome-card {
+  border-radius: 50px;
+  background: #e0e0e0;
 }
 
-body.light .welcome-card:hover{
-    color: var(--clearblue);
+body.light .welcome-card:hover {
+  color: var(--clearblue);
 }
 
-
-
-
-body.light .welcome-content{
-    color: #585858;
+body.light .welcome-content {
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 48px #bebebe, -5px -5px 48px #ffffff;
 }
 
-body.light .welcome-content ian{
-    color: #2e2e2e;
+body.light .welcome-content p {
+  color: #2e2e2e;
 }
 
-body.light .second-container{
-    background: #eceaea;
-    color: var(--black);
+body.light .welcome-content ian {
+  color: #2e2e2e;
 }
 
-body.light .fourth-container{
-    background: #eceaea;
-    color: var(--black);
+body.light .second-container {
+  background: #eceaea;
+  color: var(--black);
 }
 
-body.light .introbox h4{
-    color: #0a65c0;
-    font-weight: bold;
+body.light .fourth-container {
+  background: #eceaea;
+  color: var(--black);
 }
 
-body.light .metro{
-    border-radius: 2rem;
-background: linear-gradient(145deg, #e0e0e0, #f8f8f8);
-box-shadow:  10px 10px 20px #c5c5c5,
-             -10px -10px 20px #ffffff;
-}
-body.light .metro ul{
-    border-left: 4px solid #0c7ef0;
+body.light .introbox h4 {
+  color: #0a65c0;
+  font-weight: bold;
 }
 
-body.light .metro h3{
-    color: #0a65c0;
-    font-weight: bold;
+body.light .metro {
+  border-radius: 2rem;
+  background: linear-gradient(145deg, #e0e0e0, #f8f8f8);
+  box-shadow: 10px 10px 20px #c5c5c5, -10px -10px 20px #ffffff;
+}
+body.light .metro ul {
+  border-left: 4px solid #0c7ef0;
 }
 
-body.light footer{
-    background: var(--whitemode);
-    color: var(--black);
+body.light .metro h3 {
+  color: #0a65c0;
+  font-weight: bold;
 }
 
-body.light #portfolio h2{
-    background: var(--whitemode);
-    color: var(--black);
+body.light footer {
+  background: var(--whitemode);
+  color: var(--black);
 }
 
-body.light #portfolio p{
-    color: var(--black);
+body.light #portfolio h2 {
+  background: var(--whitemode);
+  color: var(--black);
 }
 
-body.light .ian-img{
-    background: url("../images/iw.webp");
-    background-position: center;
-    background-size: contain;
-    
+body.light #portfolio p {
+  color: var(--black);
 }
 
-body.light #header{
-    background: transparent;
+body.light .ian-img {
+  background: url("../images/iw.webp");
+  background-position: center;
+  background-size: contain;
 }
 
-body.light .menu ul{
-    background-color: white;
+body.light #header {
+  background: transparent;
 }
 
-body.light .menu ul li a{
-    color: var(--black);
-    font-weight: bold;
+body.light .menu ul {
+  background-color: #1b1b1b;
 }
 
-body.light .menu ul li :hover{
-    color:var(--white);
+body.light .menu ul li a {
+  color: var(--white);
 }
 
-body.light .logo a{
-    color: var(--black);
-    }
-
-body.light .ham span{
-background: var(--black);
+body.light .menu ul li :hover {
+  color: var(--blue);
+  background: var(--white);
 }
 
-
-
-body.light .description{
-    background-color: #4d4d4d98;
-    color: var(--white);
+body.light .logo a {
+  color: var(--black);
 }
 
-body.light .description p{
-    background-color: var(--white);
-    color: black;
+body.light .ham span {
+  background: var(--black);
 }
 
-body.light .description span{
-    background-color:#3792e2;
+body.light .description {
+  background-color: #a0a0a09f;
+  color: var(--white);
 }
 
-body.light .buttons-project{
-    background-color: #ffffffcb;
+body.light .description p {
+  background-color: var(--white);
+  color: black;
+}
+
+body.light .description span {
+  background-color: #bebebe;
+  color: #1b1b1b;
+}
+
+body.light .buttons-project {
+  background-color: #dfdfdf;
 }
