@@ -36,7 +36,6 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 
 button:hover{
   transform: scale(1.4,1.4);
-  cursor: pointer;
 }
 
 body.light .button{

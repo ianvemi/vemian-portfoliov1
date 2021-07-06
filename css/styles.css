@@ -57,7 +57,18 @@ body {
   font-size: 1.6rem;
   background: rgb(0, 157, 184);
   background: linear-gradient(145deg, #222222, #161616);
+  cursor: url('../images/cursor.png'), auto;
 }
+
+a{
+  cursor: url('../images/cursor-li.png'), auto;
+}
+
+i{
+  cursor: url('../images/cursor-li.png'), auto;
+}
+
+
 
 body::-webkit-scrollbar {
   width: 0.5rem;
