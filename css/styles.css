@@ -664,6 +664,10 @@ footer {
   background-image: url("../images/ShopCart.webp");
 }
 
+.weather {
+  background-image: url("../images/weather.webp");
+}
+
 .vemian-times2 {
   background-image: url("../images/foody.webp");
 }
