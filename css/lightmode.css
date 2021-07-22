@@ -3,16 +3,10 @@ body.light {
 }
 
 body.light .welcome-card {
-  border-radius: 50px;
   background: #e0e0e0;
 }
 
-body.light .welcome-card:hover {
-  color: var(--clearblue);
-}
-
 body.light .welcome-content {
-  border-radius: 10px;
   background: #e0e0e0;
   box-shadow: 5px 5px 48px #bebebe, -5px -5px 48px #ffffff;
 }
@@ -35,13 +29,12 @@ body.light .fourth-container {
   color: var(--black);
 }
 
-body.light .introbox h4 {
-  color: #0a65c0;
-  font-weight: bold;
+body.light .introbox{
+  color: var(--black);
+  background: #e0e0e0;
 }
 
 body.light .metro {
-  border-radius: 2rem;
   background: linear-gradient(145deg, #e0e0e0, #f8f8f8);
   box-shadow: 10px 10px 20px #c5c5c5, -10px -10px 20px #ffffff;
 }
@@ -52,10 +45,16 @@ body.light .metro ul {
 body.light .metro h3 {
   color: #0a65c0;
   font-weight: bold;
+  background: #e0e0e0;
 }
 
 body.light footer {
   background: var(--whitemode);
+  color: var(--black);
+}
+
+body.light footer p {
+  background: #e0e0e0;
   color: var(--black);
 }
 
@@ -79,16 +78,16 @@ body.light #header {
 }
 
 body.light .menu ul {
-  background-color: #1b1b1b;
+  background-color: #e0e0e0;
 }
 
 body.light .menu ul li a {
-  color: var(--white);
+  color: #131313;
 }
 
 body.light .menu ul li :hover {
-  color: var(--blue);
-  background: var(--white);
+  color: #0c7ef0;
+  border-bottom: 0.3rem solid #0c7ef0;
 }
 
 body.light .logo a {
@@ -99,14 +98,17 @@ body.light .ham span {
   background: var(--black);
 }
 
-body.light .description {
-  background-color: #a0a0a09f;
-  color: var(--white);
+body.light .metro2 h4{
+  background: #eceaea;
+  color: black;
+
 }
+
 
 body.light .description p {
   background-color: var(--white);
   color: black;
+  font-weight: b;
 }
 
 body.light .description span {
@@ -117,3 +119,20 @@ body.light .description span {
 body.light .buttons-project {
   background-color: #dfdfdf;
 }
+
+body.light .filter{
+  background-color: #e0e0e0;
+  color: var(--black);
+}
+
+body.light .filter button{
+  background-color: #eceaea;
+  color: var(--black);
+}
+
+body.light .filter button:hover{
+  border-bottom: 2px solid #0c7ef0;
+}
+
+
+

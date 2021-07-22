@@ -19,10 +19,6 @@
 
     <title>Ian Velázquez Medina | Diseño y Desarrollo Web</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -45,12 +41,11 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-31E7RBMBYZ');
     </script>
 
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    <script src="js/code.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
 
 <body>
@@ -68,9 +63,7 @@
                 <span class="br-3"></span>
             </button>
         </nav>
-        <div class="logo"><a href="#">
-                <h1>vemian</h1>
-            </a></div>
+
     </header>
 
     <!--WELCOME FIRST SECTION-->
@@ -82,9 +75,9 @@
         <div class="welcome-box">
             <section class="welcome-card">
                 <div class="welcome-content">
-                    <p class="text">HI I'M
+                    <p class="text">
                         <ian class="ian">ian_</ian>
-                        WEB DEV & DESIGNER
+                        web designer & developer.
                     </p>
                     <div class="buttons">
                         <a class="button" href="https://www.facebook.com/ianvemi/" target="blank" rel="noopener"
@@ -114,10 +107,9 @@
     <!--CONTENT SECOND SECTION-->
     <div class="second-container" id="aboutme">
         <div class="boxes">
-            <div class="metro introbox showOn">
+            <div class=" introbox showOn">
                 <div class="name-intro">
-                    <h2>Ian Velázquez Medina</h2>
-                    <h4>"I code and design"</h4>
+                    <h2>design + code</h2>
                 </div>
 
                 <div class="cv">
@@ -130,10 +122,13 @@
             <div class="ian-img imagen" id="picture-vemian"></div>
             <div class="metro educationa showOn">
                 <h3>EDUCATION</h3>
-                <ul>
-                    <li><span>IPN 2017-2021</span>Informatics Engineering</li>
-                    <li><span>IPN 2014-2017</span>Digital Graphic Design Technician</li>
-                </ul>
+                <div class="education">
+                    <ul>
+                        <li><span>IPN - UPIICSA (2017-2021)</span>Informatics Engineering</li>
+                        <li><span>IPN - CECyT 2 (2014-2017)</span>Digital Graphic Design Technician</li>
+                    </ul>
+                </div>
+
             </div>
             <div class="metro habs showOn">
                 <h3>SKILLS</h3>
@@ -142,7 +137,7 @@
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
-                        <li>Adobe</li>
+                        <li>PHP</li>
                     </ul>
                     <ul>
                         <li>React</li>
@@ -150,16 +145,20 @@
                         <li>SQL</li>
                         <li>Node.js</li>
                     </ul>
+
                 </div>
             </div>
             <div class="metro apps showOn">
                 <h3>MY FAVS</h3>
-                <ul>
-                    <li>Visual Studio Code</li>
-                    <li>Adobe Illustrator</li>
-                    <li>WordPress</li>
-                    <li>Adobe Xd</li>
-                </ul>
+                <div class="herr">
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Adobe Illustrator</li>
+                        <li>WordPress</li>
+                        <li>Adobe Xd</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
@@ -167,13 +166,19 @@
     <div class="fourth-container">
         <div id="portfolio">
             <h2>Portfolio</h2>
+            <div class="filter">
+                <button class="button-filter" id="all">All</button>
+                <button class="button-filter" id="jsb">JavaScript</button>
+                <!-- <button class="button-filter" id="phpb">PHP</button> -->
+                <button class="button-filter" id="layoutb">Layouts</button>
+                <button class="button-filter" id="othersb">Others</button>
+
+            </div>
         </div>
         <div class="box2">
-
-
-            <div class="metro2 vemian-times2 showOn">
+            <div class="metro2 vemian-times2 showOn JS hide">
+                <h4>FOODY</h4>
                 <div class="description">
-                    <h4>FOODY</h4>
                     <p>A digital menu that generates the final order with your data.</p>
                     <span>HTML / JS ES6+ / SASS / Gulp</span>
                     <div class="buttons-project">
@@ -185,9 +190,9 @@
                 </div>
             </div>
 
-            <div class="metro2 schedule showOn">
+            <div class="metro2 schedule showOn JS REACT hide">
+                <h4>SCHEDULE</h4>
                 <div class="description">
-                    <h4>SCHEDULE</h4>
                     <p>web app to save your reminders and digital notes</p>
                     <span>HTML / React / CSS </span>
                     <div class="buttons-project">
@@ -199,9 +204,10 @@
                 </div>
             </div>
 
-            <div class="metro2 breaking-bad showOn">
+            <div class="metro2 breaking-bad showOn JS REACT hide">
+                <h4>BREAKING BAD API</h4>
                 <div class="description">
-                    <h4>BREAKING BAD API</h4>
+                    
                     <p>React app with HTTP requests from Breaking Bad API</p>
                     <span>HTML / React / CSS </span>
                     <div class="buttons-project">
@@ -213,9 +219,9 @@
                 </div>
             </div>
 
-            <div class="metro2 weather showOn">
+            <div class="metro2 weather showOn JS REACT hide">
+                <h4>WEATHER APP</h4>
                 <div class="description">
-                    <h4>WEATHER APP</h4>
                     <p>React app consuming OpenWeather API with Neumorphism design.</p>
                     <span>HTML / React / CSS</span>
                     <div class="buttons-project">
@@ -227,9 +233,9 @@
                 </div>
             </div>
 
-            <div class="metro2 shopcart showOn">
+            <div class="metro2 shopcart showOn JS REACT hide">
+                <h4>SHOPCART</h4>
                 <div class="description">
-                    <h4>SHOPCART</h4>
                     <p>ShoppingCart project to learn the basics of React</p>
                     <span>HTML / React / CSS</span>
                     <div class="buttons-project">
@@ -242,9 +248,9 @@
             </div>
 
 
-            <div class="metro2 cw2 showOn">
+            <div class="metro2 cw2 showOn OTHERS hide">
+                <h4>CROSSING WORLDS</h4>
                 <div class="description">
-                    <h4>CROSSING WORLDS</h4>
                     <p>I created a videogame & his promotional page.</p>
                     <span>C# Script / Unity / HTML - CSS</span>
                     <div class="buttons-project">
@@ -257,9 +263,9 @@
             </div>
 
 
-            <div class="metro2 tqs2 showOn">
+            <div class="metro2 tqs2 showOn OTHERS hide">
+                <h4>TQS</h4>
                 <div class="description">
-                    <h4>TQS</h4>
                     <p>e-commerce to order products from CDMX solidarity cooperatives </p>
                     <span>WordPress - WooCommerce / Adobe / CSS / PHP</span>
                     <div class="buttons-project">
@@ -270,9 +276,9 @@
             </div>
 
 
-            <div class="metro2 layout12 showOn">
+            <div class="metro2 layout12 showOn LAYOUT hide">
+                <h4>BLOG - LAYOUT</h4>
                 <div class="description">
-                    <h4>BLOG - LAYOUT</h4>
                     <p>Web layout responsive pure css design & animations.</p>
                     <span>CSS / Responsive / Flexbox / Grid</span>
                     <div class="buttons-project">
@@ -286,9 +292,9 @@
             </div>
 
 
-            <div class="metro2 layout22 showOn">
+            <div class="metro2 layout22 showOn LAYOUT hide">
+                <h4>PORTAFOLIO - LAYOUT</h4>
                 <div class="description">
-                    <h4>PORTAFOLIO - LAYOUT</h4>
                     <p>Web layout responsive - pure css design & animations.</p>
                     <span>CSS / Responsive / Flexbox / Grid</span>
                     <div class="buttons-project">
@@ -303,7 +309,11 @@
     </div>
     <!--FOOTER-->
     <footer>
-        vemian portfolio v2.5
+        <p>
+            Designed & Built by Ian Velázquez. </p>
+        <p>Contact me: ianvemi@outlook.com</p>
+
+
     </footer>
 </body>
 

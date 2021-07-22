@@ -1,19 +1,13 @@
 /*FONTS*/
+
 @font-face {
-  font-family: "Century Gothic";
-  src: url("fonts/CenturyGothic.ttf");
+  font-family: "rota";
+  src: url("fonts/rotar.otf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Caviar Dreams";
-  src: url("fonts/CaviarDreams.ttf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 @font-face {
   font-family: "Catch";
@@ -26,22 +20,8 @@
 /*GENERAL*/
 :root {
   --blue: #1baee9;
-  --white: #dfdfdf;
+  --white: #dfdfdfef;
   --black: #1d1d1d;
-  --blue-gradient: linear-gradient(
-    121deg,
-    rgba(29, 29, 29, 1) 0%,
-    rgba(50, 149, 245, 1) 85%
-  );
-  --second-blue: #1baee9;
-  --ligth-gradient: linear-gradient(
-    309deg,
-    rgba(2, 96, 175, 1) 0%,
-    rgba(55, 149, 231, 1) 54%,
-    rgba(0, 155, 255, 1) 100%
-  );
-  --whitemode: #eceaea;
-  --clearblue: #006fdf;
 }
 
 * {
@@ -55,8 +35,8 @@ html {
 
 body {
   font-size: 1.6rem;
-  background: rgb(0, 157, 184);
-  background: linear-gradient(145deg, #222222, #161616);
+  /* background: rgb(0, 157, 184);
+  background: linear-gradient(145deg, #222222, #161616); */
   cursor: url('../images/cursor.png'), auto;
 }
 
@@ -68,17 +48,11 @@ i{
   cursor: url('../images/cursor-li.png'), auto;
 }
 
-
-
 body::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0rem;
   background-color: #1d1d1d;
 }
 
-body::-webkit-scrollbar-thumb {
-  background-color: var(--blue);
-  border-radius: 5rem;
-}
 
 html,
 body {
@@ -86,13 +60,13 @@ body {
 }
 
 *::selection {
-  background: #379bff;
+  background: #64b2ff;
   color: #101010;
 }
 
 /* Firefox */
 *::-moz-selection {
-  background: #379bff;
+  background: #64b2ff;
   color: #101010;
 }
 /*HEADER*/
@@ -117,7 +91,7 @@ button {
   width: 100%;
   background: transparent;
   height: fit-content;
-  font-family: "Caviar Dreams";
+  font-family: 'rota';
   color: var(--white);
   position: fixed;
   top: 0;
@@ -129,30 +103,28 @@ button {
   width: 50%;
   float: right;
   height: fit-content;
-  font-family: "Didact Gothic", sans-serif;
-  font-weight: normal;
+  font-family: 'rota';
+  letter-spacing: 0.2rem;
 }
 
 .menu ul {
   float: right;
   margin-right: 7.5rem;
-  background-color: #1b1b1b;
-  border-radius: 1rem;
+  background:#131313;
+  padding: 1rem;
+
 }
 
 .menu ul li {
   text-align: justify;
   display: inline-block;
   line-height: 3.4rem;
-  transition: all 0.3s;
   padding-left: 1rem;
 }
 
 .menu ul li :hover {
-  color: var(--white);
-  font-weight: bold;
-  background: #0062b8;
-  border-radius: 0.5rem;
+  color: var(--blue);
+  border-bottom: 0.3rem solid var(--blue);
 }
 
 .menu ul li a {
@@ -162,45 +134,26 @@ button {
   padding-bottom: 1rem;
   text-decoration: none;
   color: var(--white);
-  font-size: 2rem;
-  transition: all 0.6s;
+  font-size: 1.65rem;
 }
 
-.logo {
-  width: 15%;
-  display: inline-block;
-  text-align: center;
-  line-height: 5rem;
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-
-.logo:hover a {
-  color: var(--blue);
-}
-
-.logo a {
-  text-decoration: none;
-  color: var(--white);
-  transition: all 300ms;
-}
 /*HAMBURGUER MENU RESPONSIVE*/
 .ham {
   display: none;
   cursor: pointer;
   border: none;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   background-color: transparent;
-  border-radius: 0.2rem;
 }
 
 .ham span {
   display: block;
   background-color: var(--white);
   height: 0.3rem;
-  width: 2.8rem;
+  width: 3.5rem;
   margin: 1rem auto;
+
 }
 /*BUTTON SWITCH DARKMODE*/
 .switch {
@@ -209,7 +162,7 @@ button {
   bottom: 2rem;
   right: 2rem;
   z-index: 1;
-  border-radius: 100rem;
+
   border: none;
   cursor: pointer;
   display: flex;
@@ -227,7 +180,7 @@ button {
   height: 3rem;
   line-height: 3rem;
   display: block;
-  color: var(--blue);
+  color: #131313;
 }
 
 .switch::after {
@@ -240,19 +193,18 @@ button {
   top: 0;
   left: 0;
   right: unset;
-  border-radius: 10rem;
   transition: all 1s;
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .switch.active {
-  background: #1d1d1d;
+  background:#d6d6d6;
 }
 
 .switch.active::after {
   right: 0;
   left: unset;
-  background: #d6d6d6;
+  background: #131313;
 }
 /*WELCOME*/
 .welcome-box {
@@ -260,7 +212,7 @@ button {
   flex-basis: 100%;
   width: 100%;
   flex-grow: 1;
-  font-family: "Century Gothic";
+  font-family: 'rota';
   justify-content: center;
   perspective: 1000px;
 }
@@ -269,44 +221,36 @@ button {
   flex-basis: 100%;
   display: flex;
   align-items: center;
-  background-color: var(--black);
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background: rgb(0, 177, 184);
-  background: linear-gradient(
-    87deg,
-    rgba(0, 177, 184, 1) 0%,
-    rgba(0, 98, 184, 1) 53%
-  );
+  background:#131313;
+
 }
 
 .welcome-content {
   transform-style: preserve-3d;
   color: var(--white);
   margin: 0 auto;
-  font-size: 2.5rem;
-  font-weight: bold;
-  border-radius: 1rem;
+  font-size: 4rem;
+  border-radius: 0.5rem;
   overflow: hidden;
-  width: 45%;
+  letter-spacing: 0.2rem;
+  width: 55%;
   height: fit-content;
-  background: linear-gradient(145deg, #1b1b1b, #0f0f0f);
-  box-shadow: 1px 1px 3px #101010, -1px -1px 3px #161616;
-}
-
-.welcome-content p {
-  margin-top: 2rem;
+  margin-bottom: 8rem;
+  
 }
 
 .welcome-content ian {
+  margin-left: 5rem;
   display: block;
   width: 100%;
   height: 100%;
-  font-size: 16rem;
-  font-weight: lighter;
+  font-size: 18rem;
   font-family: "Catch";
   color: transparent;
+  letter-spacing: 0rem;
   background-image: linear-gradient(
     to left,
     #02b6d6,
@@ -327,7 +271,7 @@ button {
 }
 
 .buttons {
-  width: 70%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
@@ -347,7 +291,7 @@ button {
 
 /*CONTENT ABOUT ME*/
 .second-container {
-  background: #0d0d0d;
+  background:#131313;
   color: var(--white);
   width: 100%;
   margin: 0 auto;
@@ -355,7 +299,7 @@ button {
 }
 
 .fourth-container {
-  background: #111111;
+  background:#131313;
   color: var(--white);
   width: 100%;
   margin: 0 auto;
@@ -363,28 +307,28 @@ button {
 }
 
 .boxes {
-  width: 75%;
+  width: 90%;
   height: 100%;
   display: grid;
   margin: 0 auto;
   grid-template-columns: [x0] 1fr [x1] 1fr;
   grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3]1fr [y4] 1fr [y5];
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
   overflow: hidden;
   padding: 5rem;
   border: none;
 }
 
 .box2 {
-  width: 100%;
+  width: 99.5%;
   height: 100%;
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
   overflow: hidden;
-  grid-row-gap: 0px;
-  border: none;
+  /* grid-row-gap: 4px;
+  grid-column-gap: 3px; */
 }
 
 .boxes .portfolio {
@@ -400,8 +344,6 @@ button {
   grid-row-end: y1;
   background-color: var(--black);
   padding-left: 10rem;
-  font-size: 2rem;
-  justify-content: center;
 }
 
 .introbox h2 {
@@ -409,28 +351,34 @@ button {
   font-weight: normal;
 }
 
-.introbox h4 {
-  color: var(--second-blue);
-  font-weight: bold;
-}
-
 .imagen {
   grid-column-start: x0;
   grid-column-end: x1;
   grid-row-start: y1;
   grid-row-end: y3;
-  border-radius: 1rem;
 }
 .educationa {
   grid-column-start: x1;
   grid-column-end: x2;
   grid-row-start: y1;
   grid-row-end: y3;
+  
 }
+
+.education{
+  background-image: url("../images/5-min.png");
+  background-position:top right;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
 
 .educationa ul li span {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
+  letter-spacing: 0.4rem;
+  padding-bottom: 1rem;
 }
 
 .habs {
@@ -439,10 +387,22 @@ button {
   grid-row-start: y3;
   grid-row-end: y5;
 }
-
+.herr{
+  background-image: url("../images/vscode-min.png");
+  background-position:top right;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
 .skil {
   display: flex;
   flex-direction: row;
+  background-image: url("../images/react-min.png");
+  background-position:top right;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  height: 100%;
+
 }
 
 .skil ul {
@@ -457,44 +417,53 @@ button {
 }
 
 .metro {
-  font-family: "Century Gothic";
-  letter-spacing: 0.05rem;
+  font-family: 'rota';
+  letter-spacing: 0.2rem;
   font-weight: normal;
   display: flex;
   flex-direction: column;
-  border: 3px solid transparent;
   opacity: 0;
   transform: translateX(50rem);
   transition: all 1.5s;
-  border-radius: 10px;
-  background: #0d0d0d;
-  box-shadow: 11px 11px 22px #050505, -11px -11px 22px #151515;
+  background:#131313;
+  box-shadow: 11px 11px 22px #0f0f0f, -11px -11px 22px #151515;
 }
 
 .metro2 {
-  font-family: "Didact Gothic", sans-serif;
+  font-family: 'rota';
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   transition: all 1s;
   height: 35rem;
   text-align: center;
   line-height: 5rem;
-  font-size: 1.7rem;
+  font-size: 1.45rem;
+  letter-spacing: 0.14rem;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0;
-  transform: translateX(-50rem) rotateZ(10deg);
-  transition: transform 2s 0.5s cubic-bezier(0.1, 0.8, 2, 2);
-  opacity: 5s 5s ease-out;
+  transform: translateX(-50rem) rotateZ(0deg);
+}
+
+.metro2 h4{
+  background: #202020;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  width: fit-content;
+  padding: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 0;
 }
 
 .metro ul {
   list-style: none;
   margin-left: 4rem;
   padding-left: 1.5rem;
-  font-size: 1.65rem;
-  border-left: 4px solid var(--second-blue);
+  font-size: 1.80rem;
+  border-left: 3px solid var(--blue);
 }
 
 .metro ul li {
@@ -502,30 +471,35 @@ button {
 }
 
 .metro h3 {
-  color: var(--second-blue);
+  color: var(--white);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.9rem;
   padding-top: 4rem;
   padding-left: 4rem;
+  padding-bottom: 3rem;
   margin-bottom: 3rem;
+  letter-spacing: 0.35rem;
+  background-color: #101010;
 }
 
 .introbox {
   display: flex;
   flex-direction: row;
   font-weight: normal;
-  font-family: "Century Gothic";
+  font-family: 'rota';
   font-size: 1.65rem;
+  background-color: #101010;
 }
 
 .name-intro {
   flex-basis: 50%;
-  margin-top: 3%;
+  margin-top: 4%;
+  font-size: 3rem;
 }
 
 .cv {
-  flex-basis: 50%;
-  margin-top: 3%;
+  flex-basis: 40%;
+  margin-top: 2%;
   text-align: center;
 }
 
@@ -538,7 +512,7 @@ button {
   background-position: center;
   background-size: contain;
   animation-name: roller;
-  animation-duration: 50s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -564,11 +538,15 @@ button {
   animation: menu 0.5s ease-in-out both;
 }
 
+.box2 .metro2:hover h4{
+  width: 95%;
+}
+
+
 .box2 .metro2 a {
   width: 100%;
   padding: 3rem;
   text-decoration: none;
-  color: var(--black);
   background-color: transparent;
   font-size: 1.7rem;
 }
@@ -580,20 +558,14 @@ button {
   display: none;
   height: 100%;
   opacity: 0;
-  background-color: #27272700;
+  background:#1313137e;
   color: var(--white);
   text-align: center;
-}
-
-.description h4 {
-  background-color: rgba(37, 37, 37, 0.5);
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  font-size: 1.55rem;
 }
 
 .description p {
-  background-color: #242424;
+  background:#131313;
 }
 
 .description span {
@@ -603,7 +575,7 @@ button {
 }
 
 .buttons-project {
-  background-color: #1d1d1d;
+  background:#131313;
   margin: 0 auto;
   padding: 3%;
 }
@@ -618,16 +590,25 @@ button {
 }
 
 footer {
-  font-family: "Century Gothic";
-  font-size: 1.5rem;
+  font-family: 'rota';
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
   display: block;
-  height: 5rem;
-  background-color: transparent;
+  height: 20rem;
   color: var(--white);
   width: 100%;
   text-align: center;
-  line-height: 5rem;
-  background-color: #1d1d1d;
+  background-color: #101010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p{
+  display: block;
+  padding: 3rem;
+  background-color: #0a0a0a;
+  margin-left: 2rem;
 }
 
 /*PORTFOLIO PROJECTS*/
@@ -635,16 +616,18 @@ footer {
   width: 100%;
   height: fit-content;
   margin: 0 auto;
-  font-family: "Century Gothic";
+  font-family: 'rota';
   font-size: 2rem;
 }
 #portfolio h2 {
   display: block;
   text-align: center;
-  background-color: #2e2e2e;
+  background:#131313;
   height: 1rem;
-  padding: 4rem;
+  padding: 5rem;
+  font-size: 4rem;
   line-height: 1rem;
+  letter-spacing: 1rem;
   color: var(--white);
 }
 
@@ -682,4 +665,36 @@ footer {
 
 .layout22 {
   background-image: url("../images/portfolio.webp");
+}
+
+/*PORTFOLIO HIDE*/
+.hide{
+  display: none;
+}
+
+.filter{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #101010;
+}
+.button-filter{
+  background-color: #131313;
+  font-family: 'rota';
+  color: white;
+  font-size: 1.7rem;
+  letter-spacing: 0.3rem;
+  padding: 1.5rem;
+  border: none;
+  margin-left: 2rem;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 400ms;
+}
+
+.button-filter:hover{
+  border-bottom: 2px solid white;
+  transform: none;
 }

@@ -67,20 +67,30 @@ body.light .button2{
 #b-cv{
   color: var(--white);
   font-size: 5rem;
-  background: #2c2c2c;
+  background: #131313;
   width: 9rem;
   height:9rem;
   border-radius: 10%;
+  border: solid 3px #464646;
   line-height: 0rem;
 }
 
 body.light #b-cv{
-  color: var(--black);
+  color: #585858;
+  border: solid 3px #8d8d8d;
   background: var(--white);
+}
+
+body.light #b-cv:hover{
+  color: #0c7ef0;
+  border: solid 3px #0c7ef0;
+  transform: scale(1.1,1.1);
+  cursor: pointer;
 }
 
 #b-cv:hover{
   color: var(--blue);
+  border: solid 3px var(--blue);
   transform: scale(1.1,1.1);
   cursor: pointer;
 

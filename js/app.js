@@ -16,6 +16,71 @@ window.addEventListener("load", function () {
     btnSwitch.classList.toggle("active");
   });
 
+  /*PORTFOLIO FILTER*/
+
+  function filterPortfolio(div){
+    if(div.id === 'jsb'){
+      const divon = document.querySelectorAll('.JS');
+      divon.forEach((runner2)=>{
+        runner2.classList.remove('hide');
+      })
+
+      const divi = document.querySelectorAll('.LAYOUT, .PHP, .OTHERS');
+      divi.forEach((runner2)=>{
+        runner2.classList.add('hide');
+      })
+
+    }else if (div.id === 'layoutb'){
+
+      const divon = document.querySelectorAll('.LAYOUT');
+      divon.forEach((runner2)=>{
+        runner2.classList.remove('hide');
+      })
+
+      const divi = document.querySelectorAll('.JS, .PHP, .OTHERS');
+      divi.forEach((runner2)=>{
+        runner2.classList.add('hide');
+      })
+      
+    }else if(div.id === 'phpb'){
+    
+      const divon = document.querySelectorAll('.PHP');
+      divon.forEach((runner2)=>{
+        runner2.classList.remove('hide');
+      })
+
+      const divi = document.querySelectorAll('.JS, .LAYOUT, .OTHERS');
+      divi.forEach((runner2)=>{
+        runner2.classList.add('hide');
+      })
+    }else if(div.id === 'othersb'){
+    
+      const divon = document.querySelectorAll('.OTHERS');
+      divon.forEach((runner2)=>{
+        runner2.classList.remove('hide');
+      })
+
+      const divi = document.querySelectorAll('.JS, .LAYOUT, .PHP');
+      divi.forEach((runner2)=>{
+        runner2.classList.add('hide');
+      })
+    }else{
+      const divi = document.querySelectorAll('.JS, .LAYOUT, .PHP, .OTHERS');
+    divi.forEach((runner2)=>{
+      runner2.classList.remove('hide');
+    })
+    }
+    
+    
+  }
+
+  /*PORTOFOLIO FILTER*/
+  const breact = document.querySelectorAll('.button-filter');
+  
+  breact.forEach( (corredor) => {
+    corredor.onclick = () => filterPortfolio(corredor);
+  })
+
   /*ANIMATION SCROLL*/
   //Detect animation frame rate
   var scroll =
