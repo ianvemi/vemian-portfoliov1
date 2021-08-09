@@ -67,12 +67,6 @@ body.light #portfolio p {
   color: var(--black);
 }
 
-body.light .ian-img {
-  background: url("../images/iw.webp");
-  background-position: center;
-  background-size: contain;
-}
-
 body.light #header {
   background: transparent;
 }
@@ -104,6 +98,11 @@ body.light .metro2 h4{
 
 }
 
+body.light .ian-img {
+  background: url("../images/iw.webp");
+  background-position: center;
+  background-size: contain;
+}
 
 body.light .description p {
   background-color: var(--white);

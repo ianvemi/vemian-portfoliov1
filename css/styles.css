@@ -356,7 +356,9 @@ button {
   grid-column-end: x1;
   grid-row-start: y1;
   grid-row-end: y3;
+  filter: var(--blue);
 }
+
 .educationa {
   grid-column-start: x1;
   grid-column-end: x2;
@@ -448,7 +450,7 @@ button {
 }
 
 .metro2 h4{
-  background: #202020;
+  background: #202020a1;
   color: white;
   font-weight: bold;
   letter-spacing: 0.2rem;
@@ -511,10 +513,12 @@ button {
   background: url("../images/i.webp");
   background-position: center;
   background-size: contain;
-  animation-name: roller;
-  animation-duration: 60s;
+   animation-name: roller;  
+  animation-duration: 80s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  opacity: 80%;
+
 }
 
 @keyframes roller {
@@ -558,24 +562,24 @@ button {
   display: none;
   height: 100%;
   opacity: 0;
-  background:#1313137e;
+  background:#13131300;
   color: var(--white);
   text-align: center;
   font-size: 1.55rem;
 }
 
 .description p {
-  background:#131313;
+  background:#131313c0;
 }
 
 .description span {
   display: block;
   width: 100%;
-  background-color: #313131;
+  background-color: #313131e3;
 }
 
 .buttons-project {
-  background:#131313;
+  background:#1313139c;
   margin: 0 auto;
   padding: 3%;
 }
@@ -655,9 +659,9 @@ footer p{
   background-image: url("../images/foody.webp");
 }
 
-.tqs2 {
+/* .tqs2 {
   background-image: url("../images/tqs.webp");
-}
+} */
 
 .layout12 {
   background-image: url("../images/blog.webp");
